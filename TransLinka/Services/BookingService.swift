@@ -94,38 +94,120 @@ class BookingService {
         let calendar = Calendar.current
         let now = Date()
         
+        // Rwandan sample routes for demo/stakeholder previews
         routes = [
             Route(
-                origin: "New York",
-                destination: "Boston",
+                origin: "Kigali",
+                destination: "Huye",
                 departureTime: calendar.date(byAdding: .hour, value: 2, to: now) ?? now,
                 arrivalTime: calendar.date(byAdding: .hour, value: 5, to: now) ?? now,
-                price: 45.00,
-                busNumber: "BUS-001",
+                price: 7000,
+                busNumber: "VOLCANO-101",
+                availableSeats: 22,
+                totalSeats: 50
+            ),
+            Route(
+                origin: "Kigali",
+                destination: "Musanze",
+                departureTime: calendar.date(byAdding: .hour, value: 4, to: now) ?? now,
+                arrivalTime: calendar.date(byAdding: .hour, value: 7, to: now) ?? now,
+                price: 8500,
+                busNumber: "STELLA-202",
+                availableSeats: 18,
+                totalSeats: 50
+            ),
+            Route(
+                origin: "Kigali",
+                destination: "Rubavu",
+                departureTime: calendar.date(byAdding: .day, value: 1, to: now) ?? now,
+                arrivalTime: calendar.date(byAdding: .day, value: 1, to: now.addingTimeInterval(3 * 3600)) ?? now,
+                price: 9500,
+                busNumber: "VIRUNGA-303",
                 availableSeats: 30,
                 totalSeats: 50
             ),
             Route(
-                origin: "New York",
-                destination: "Philadelphia",
-                departureTime: calendar.date(byAdding: .hour, value: 3, to: now) ?? now,
-                arrivalTime: calendar.date(byAdding: .hour, value: 6, to: now) ?? now,
-                price: 35.00,
-                busNumber: "BUS-002",
-                availableSeats: 25,
+                origin: "Huye",
+                destination: "Kigali",
+                departureTime: calendar.date(byAdding: .day, value: 1, to: now) ?? now,
+                arrivalTime: calendar.date(byAdding: .day, value: 1, to: now.addingTimeInterval(3 * 3600)) ?? now,
+                price: 7000,
+                busNumber: "HORIZON-404",
+                availableSeats: 12,
                 totalSeats: 50
             ),
             Route(
-                origin: "Boston",
-                destination: "New York",
-                departureTime: calendar.date(byAdding: .hour, value: 4, to: now) ?? now,
-                arrivalTime: calendar.date(byAdding: .hour, value: 7, to: now) ?? now,
-                price: 45.00,
-                busNumber: "BUS-003",
-                availableSeats: 40,
+                origin: "Rusizi",
+                destination: "Kigali",
+                departureTime: calendar.date(byAdding: .day, value: 2, to: now) ?? now,
+                arrivalTime: calendar.date(byAdding: .day, value: 2, to: now.addingTimeInterval(6 * 3600)) ?? now,
+                price: 12000,
+                busNumber: "TOWN-505",
+                availableSeats: 35,
                 totalSeats: 50
             )
         ]
+        
+        // Sample bookings to showcase different statuses in the UI
+        if let r1 = routes.first,
+           let r2 = routes.dropFirst().first,
+           let r3 = routes.dropFirst(2).first {
+            
+            bookings = [
+                Booking(
+                    userId: "user-demo-1",
+                    routeId: r1.id,
+                    route: r1,
+                    passengerName: "Alice Uwimana",
+                    passengerEmail: "alice@example.com",
+                    passengerPhone: "0780000001",
+                    selectedSeats: [5, 6],
+                    bookingDate: calendar.date(byAdding: .day, value: -1, to: now) ?? now,
+                    status: .confirmed,
+                    totalPrice: r1.price * 2,
+                    blockchainHash: generateBlockchainHash()
+                ),
+                Booking(
+                    userId: "user-demo-2",
+                    routeId: r2.id,
+                    route: r2,
+                    passengerName: "Jean Bosco",
+                    passengerEmail: "jean@example.com",
+                    passengerPhone: "0780000002",
+                    selectedSeats: [12],
+                    bookingDate: calendar.date(byAdding: .hour, value: -6, to: now) ?? now,
+                    status: .pending,
+                    totalPrice: r2.price,
+                    blockchainHash: generateBlockchainHash()
+                ),
+                Booking(
+                    userId: "user-demo-3",
+                    routeId: r3.id,
+                    route: r3,
+                    passengerName: "Claudine Iradukunda",
+                    passengerEmail: "claudine@example.com",
+                    passengerPhone: "0780000003",
+                    selectedSeats: [20, 21, 22],
+                    bookingDate: calendar.date(byAdding: .day, value: -2, to: now) ?? now,
+                    status: .completed,
+                    totalPrice: r3.price * 3,
+                    blockchainHash: generateBlockchainHash()
+                ),
+                Booking(
+                    userId: "user-demo-4",
+                    routeId: r1.id,
+                    route: r1,
+                    passengerName: "Eric Niyonzima",
+                    passengerEmail: "eric@example.com",
+                    passengerPhone: "0780000004",
+                    selectedSeats: [30],
+                    bookingDate: calendar.date(byAdding: .day, value: -3, to: now) ?? now,
+                    status: .cancelled,
+                    totalPrice: r1.price,
+                    blockchainHash: generateBlockchainHash()
+                )
+            ]
+        }
     }
     
     enum BookingError: LocalizedError {

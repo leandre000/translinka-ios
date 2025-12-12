@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import Web3
-import BigInt
 
+/// Ethereum blockchain service for ticket transactions
+/// Note: This is a placeholder implementation. For production, integrate with Web3.swift or similar library
 class EthereumService {
     static let shared = EthereumService()
     
-    private var web3: Web3?
     private let contractAddress = "0x..." // Replace with actual contract address
     private let privateKey = "0x..." // Should be stored securely
     
@@ -20,21 +19,27 @@ class EthereumService {
         setupWeb3()
     }
     
+    /// Initialize Web3 connection
+    /// In production, use Infura, Alchemy, or your own node
+    /// TODO: Add Web3.swift dependency when ready for production
     private func setupWeb3() {
         // Initialize Web3 connection
         // In production, use Infura, Alchemy, or your own node
-        guard let url = URL(string: "https://mainnet.infura.io/v3/YOUR_PROJECT_ID") else {
-            return
-        }
-        
-        // web3 = try? Web3(url: url)
+        // Example: web3 = try? Web3(url: URL(string: "https://mainnet.infura.io/v3/YOUR_PROJECT_ID")!)
     }
     
+    /// Create a ticket transaction on Ethereum blockchain
+    /// - Parameters:
+    ///   - bookingId: Unique booking identifier
+    ///   - userId: User identifier
+    ///   - routeId: Route identifier
+    ///   - price: Price in Wei (as UInt64 for placeholder, use BigUInt in production)
+    /// - Returns: Transaction hash
     func createTicketTransaction(
         bookingId: String,
         userId: String,
         routeId: String,
-        price: BigUInt
+        price: UInt64
     ) async throws -> String {
         // Simulate transaction creation
         try await Task.sleep(nanoseconds: 2_000_000_000)

@@ -37,6 +37,17 @@ class BookingService {
         return bookings.filter { $0.userId == userId }
     }
     
+    /// Create a new booking with blockchain verification
+    /// - Parameters:
+    ///   - userId: User ID making the booking
+    ///   - routeId: Selected route ID
+    ///   - passengerName: Passenger full name
+    ///   - passengerEmail: Passenger email
+    ///   - passengerPhone: Passenger phone number
+    ///   - selectedSeats: Array of selected seat numbers
+    ///   - totalPrice: Total booking price
+    /// - Returns: Created booking with blockchain hash
+    /// - Throws: BookingError if route not found
     func createBooking(
         userId: String,
         routeId: String,
@@ -46,14 +57,14 @@ class BookingService {
         selectedSeats: [Int],
         totalPrice: Double
     ) async throws -> Booking {
-        // Simulate blockchain transaction
+        // Simulate blockchain transaction delay
         try await Task.sleep(nanoseconds: 2_000_000_000)
         
         guard let route = getRoute(by: routeId) else {
             throw BookingError.routeNotFound
         }
         
-        // Generate blockchain hash (simulated)
+        // Generate blockchain hash for ticket security
         let blockchainHash = generateBlockchainHash()
         
         let booking = Booking(
@@ -73,6 +84,8 @@ class BookingService {
         return booking
     }
     
+    /// Generate a simulated blockchain hash for ticket verification
+    /// In production, this would call the actual blockchain service
     private func generateBlockchainHash() -> String {
         return "0x\(UUID().uuidString.replacingOccurrences(of: "-", with: "").prefix(64))"
     }

@@ -22,17 +22,15 @@ struct TicketsView: View {
         NavigationView {
             ScrollView {
                 if upcomingBookings.isEmpty {
-                    VStack(spacing: Theme.spacingMedium) {
-                        Image(systemName: "ticket.fill")
-                            .font(.system(size: 50))
-                            .foregroundColor(Theme.textSecondary)
-                        
-                        Text("No active tickets")
-                            .font(.headline)
-                            .foregroundColor(Theme.textSecondary)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.top, Theme.spacingXLarge)
+                    EmptyStateView(
+                        icon: "ticket.fill",
+                        title: "No active tickets",
+                        message: "You don't have any upcoming tickets. Book a trip to get started!",
+                        actionTitle: "Search Routes",
+                        action: {
+                            // Navigate to search
+                        }
+                    )
                 } else {
                     LazyVStack(spacing: Theme.spacingLarge) {
                         ForEach(upcomingBookings) { booking in

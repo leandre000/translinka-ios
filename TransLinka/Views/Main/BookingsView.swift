@@ -47,16 +47,11 @@ struct BookingsView: View {
                 
                 // Bookings List
                 if filteredBookings.isEmpty {
-                    VStack(spacing: Theme.spacingMedium) {
-                        Image(systemName: "calendar.badge.exclamationmark")
-                            .font(.system(size: 50))
-                            .foregroundColor(Theme.textSecondary)
-                        
-                        Text("No bookings found")
-                            .font(.headline)
-                            .foregroundColor(Theme.textSecondary)
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    EmptyStateView(
+                        icon: "calendar.badge.exclamationmark",
+                        title: "No bookings found",
+                        message: "You don't have any \(selectedFilter.rawValue.lowercased()) bookings yet"
+                    )
                 } else {
                     List {
                         ForEach(filteredBookings) { booking in

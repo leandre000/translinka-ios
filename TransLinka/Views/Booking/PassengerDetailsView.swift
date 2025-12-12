@@ -107,13 +107,11 @@ struct PassengerDetailsView: View {
                     .padding(.horizontal, Theme.spacingLarge)
                     
                     // Continue Button
-                    Button(action: {
-                        showPayment = true
-                    }) {
-                        Text("Continue to Payment")
-                            .primaryButtonStyle()
-                    }
-                    .disabled(passengerName.isEmpty || passengerEmail.isEmpty || passengerPhone.isEmpty)
+                    PrimaryButton(
+                        title: "Continue to Payment",
+                        action: { showPayment = true },
+                        isDisabled: passengerName.isEmpty || !passengerEmail.isValidEmail || !passengerPhone.isValidPhone
+                    )
                     .padding(.horizontal, Theme.spacingLarge)
                     .padding(.bottom, Theme.spacingLarge)
                 }

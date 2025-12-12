@@ -131,29 +131,25 @@ struct PaymentView: View {
                     .padding(.horizontal, Theme.spacingLarge)
                     
                     // Pay Button
-                    Button(action: {
-                        Task {
-                            if let booking = await bookingViewModel.createBooking(
-                                route: route,
-                                passengerName: passengerName,
-                                passengerEmail: passengerEmail,
-                                passengerPhone: passengerPhone,
-                                seats: bookingViewModel.selectedSeats
-                            ) {
-                                confirmedBooking = booking
-                                showBookingConfirmation = true
+                    PrimaryButton(
+                        title: "Pay $\(totalPrice, specifier: "%.2f")",
+                        action: {
+                            Task {
+                                if let booking = await bookingViewModel.createBooking(
+                                    route: route,
+                                    passengerName: passengerName,
+                                    passengerEmail: passengerEmail,
+                                    passengerPhone: passengerPhone,
+                                    seats: bookingViewModel.selectedSeats
+                                ) {
+                                    confirmedBooking = booking
+                                    showBookingConfirmation = true
+                                }
                             }
-                        }
-                    }) {
-                        if bookingViewModel.isLoading {
-                            ProgressView()
-                                .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                        } else {
-                            Text("Pay $\(totalPrice, specifier: "%.2f")")
-                        }
-                    }
-                    .primaryButtonStyle()
-                    .disabled(bookingViewModel.isLoading || (selectedPaymentMethod == .creditCard && (cardNumber.isEmpty || cardHolderName.isEmpty || expiryDate.isEmpty || cvv.isEmpty)))
+                        },
+                        isLoading: bookingViewModel.isLoading,
+                        isDisabled: selectedPaymentMethod == .creditCard && (cardNumber.isEmpty || cardHolderName.isEmpty || expiryDate.isEmpty || cvv.isEmpty)
+                    )
                     .padding(.horizontal, Theme.spacingLarge)
                     .padding(.bottom, Theme.spacingLarge)
                 }

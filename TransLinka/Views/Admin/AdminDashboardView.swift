@@ -32,10 +32,11 @@ struct AdminDashboardView: View {
                             .padding(.horizontal, Theme.spacingLarge)
                         
                         if adminViewModel.recentBookings.isEmpty {
-                            Text("No recent bookings")
-                                .foregroundColor(Theme.textSecondary)
-                                .frame(maxWidth: .infinity)
-                                .padding()
+                            EmptyStateView(
+                                icon: "calendar",
+                                title: "No recent bookings",
+                                message: "Recent bookings will appear here"
+                            )
                         } else {
                             ForEach(adminViewModel.recentBookings) { booking in
                                 AdminBookingRow(booking: booking)

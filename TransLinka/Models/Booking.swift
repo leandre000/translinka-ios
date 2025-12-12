@@ -22,11 +22,32 @@ struct Booking: Identifiable, Codable {
     let qrCode: String
     let blockchainHash: String?
     
+    /// Booking status enumeration
     enum BookingStatus: String, Codable {
         case pending = "Pending"
         case confirmed = "Confirmed"
         case cancelled = "Cancelled"
         case completed = "Completed"
+        
+        /// Status badge color
+        var color: Color {
+            switch self {
+            case .confirmed: return Theme.accentGreen
+            case .pending: return Theme.accentOrange
+            case .cancelled: return Theme.accentRed
+            case .completed: return Theme.primaryBlue
+            }
+        }
+    }
+    
+    /// Format total price as currency
+    var totalPriceString: String {
+        totalPrice.currencyString
+    }
+    
+    /// Format selected seats as comma-separated string
+    var seatsString: String {
+        selectedSeats.sorted().map { String($0) }.joined(separator: ", ")
     }
     
     init(id: String = UUID().uuidString,

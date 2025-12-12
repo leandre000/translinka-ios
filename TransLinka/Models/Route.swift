@@ -17,8 +17,19 @@ struct Route: Identifiable, Codable, Hashable {
     var busNumber: String
     var availableSeats: Int
     var totalSeats: Int
+    /// Calculate route duration in seconds
     var duration: TimeInterval {
         arrivalTime.timeIntervalSince(departureTime)
+    }
+    
+    /// Format duration as readable string
+    var durationString: String {
+        Date.formatDuration(duration)
+    }
+    
+    /// Format price as currency
+    var priceString: String {
+        price.currencyString
     }
     
     init(id: String = UUID().uuidString, 

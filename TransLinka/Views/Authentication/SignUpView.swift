@@ -114,32 +114,26 @@ struct SignUpView: View {
                         
                         // Error Message
                         if let error = authViewModel.errorMessage {
-                            Text(error)
-                                .font(.caption)
-                                .foregroundColor(Theme.accentRed)
+                            ErrorView(message: error)
                                 .padding(.horizontal)
                         }
                         
                         // Sign Up Button
-                        Button(action: {
-                            Task {
-                                await authViewModel.signUp(
-                                    fullName: fullName,
-                                    email: email,
-                                    password: password,
-                                    confirmPassword: confirmPassword
-                                )
-                            }
-                        }) {
-                            if authViewModel.isLoading {
-                                ProgressView()
-                                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                            } else {
-                                Text("Sign Up")
-                            }
-                        }
-                        .primaryButtonStyle()
-                        .disabled(authViewModel.isLoading)
+                        PrimaryButton(
+                            title: "Sign Up",
+                            action: {
+                                Task {
+                                    await authViewModel.signUp(
+                                        fullName: fullName,
+                                        email: email,
+                                        password: password,
+                                        confirmPassword: confirmPassword
+                                    )
+                                }
+                            },
+                            isLoading: authViewModel.isLoading,
+                            isDisabled: fullName.isEmpty || email.isEmpty || password.isEmpty || confirmPassword.isEmpty
+                        )
                         .padding(.top, Theme.spacingMedium)
                         
                         // Google Sign In

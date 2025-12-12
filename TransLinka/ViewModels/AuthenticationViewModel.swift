@@ -28,14 +28,28 @@ class AuthenticationViewModel: ObservableObject {
         }
     }
     
+    /// Handle user registration
+    /// - Parameters:
+    ///   - fullName: User's full name
+    ///   - email: User's email address
+    ///   - password: User's password
+    ///   - confirmPassword: Password confirmation
     func signUp(fullName: String, email: String, password: String, confirmPassword: String) async {
+        // Validate password match
         guard password == confirmPassword else {
             errorMessage = "Passwords do not match"
             return
         }
         
+        // Validate password length
         guard password.count >= 6 else {
             errorMessage = "Password must be at least 6 characters"
+            return
+        }
+        
+        // Validate email format
+        guard email.isValidEmail else {
+            errorMessage = "Please enter a valid email address"
             return
         }
         
@@ -53,7 +67,17 @@ class AuthenticationViewModel: ObservableObject {
         isLoading = false
     }
     
+    /// Handle user sign in
+    /// - Parameters:
+    ///   - email: User's email address
+    ///   - password: User's password
     func signIn(email: String, password: String) async {
+        // Validate email format
+        guard email.isValidEmail else {
+            errorMessage = "Please enter a valid email address"
+            return
+        }
+        
         isLoading = true
         errorMessage = nil
         

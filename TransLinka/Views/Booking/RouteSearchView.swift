@@ -55,12 +55,13 @@ struct RouteSearchView: View {
                             .cornerRadius(Theme.cornerRadiusMedium)
                     }
                     
-                    Button(action: {
-                        bookingViewModel.searchRoutes(origin: origin, destination: destination, date: selectedDate)
-                    }) {
-                        Text("Search Routes")
-                            .primaryButtonStyle()
-                    }
+                    PrimaryButton(
+                        title: "Search Routes",
+                        action: {
+                            bookingViewModel.searchRoutes(origin: origin, destination: destination, date: selectedDate)
+                        },
+                        isDisabled: origin.isEmpty || destination.isEmpty
+                    )
                     .padding(.top, Theme.spacingMedium)
                 }
                 .padding()
@@ -76,16 +77,11 @@ struct RouteSearchView: View {
                     }
                     .listStyle(.plain)
                 } else if !origin.isEmpty && !destination.isEmpty {
-                    VStack(spacing: Theme.spacingMedium) {
-                        Image(systemName: "magnifyingglass")
-                            .font(.system(size: 50))
-                            .foregroundColor(Theme.textSecondary)
-                        
-                        Text("No routes found")
-                            .font(.headline)
-                            .foregroundColor(Theme.textSecondary)
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    EmptyStateView(
+                        icon: "magnifyingglass",
+                        title: "No routes found",
+                        message: "We couldn't find any routes for your search. Try different locations or dates."
+                    )
                 }
             }
             .navigationTitle("Search Routes")

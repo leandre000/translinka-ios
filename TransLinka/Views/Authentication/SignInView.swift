@@ -84,27 +84,21 @@ struct SignInView: View {
                         
                         // Error Message
                         if let error = authViewModel.errorMessage {
-                            Text(error)
-                                .font(.caption)
-                                .foregroundColor(Theme.accentRed)
+                            ErrorView(message: error)
                                 .padding(.horizontal)
                         }
                         
                         // Sign In Button
-                        Button(action: {
-                            Task {
-                                await authViewModel.signIn(email: email, password: password)
-                            }
-                        }) {
-                            if authViewModel.isLoading {
-                                ProgressView()
-                                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                            } else {
-                                Text("Sign In")
-                            }
-                        }
-                        .primaryButtonStyle()
-                        .disabled(authViewModel.isLoading)
+                        PrimaryButton(
+                            title: "Sign In",
+                            action: {
+                                Task {
+                                    await authViewModel.signIn(email: email, password: password)
+                                }
+                            },
+                            isLoading: authViewModel.isLoading,
+                            isDisabled: email.isEmpty || password.isEmpty
+                        )
                         .padding(.top, Theme.spacingMedium)
                         
                         // Google Sign In

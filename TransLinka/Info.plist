@@ -52,6 +52,10 @@
 	<string>TransLinka needs NFC access to validate your tickets</string>
 	<key>NSCameraUsageDescription</key>
 	<string>TransLinka needs camera access for AR navigation</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>TransLinka needs location access to show nearby bus stops and provide navigation</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>TransLinka needs location access to track your bus in real-time</string>
 </dict>
 </plist>
 

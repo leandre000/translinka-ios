@@ -2,16 +2,19 @@
 //  MapView.swift
 //  TransLinka
 //
-//  Created on 2024
+//  NOTE: Full functionality requires Google Maps API and backend integration
+//  Currently shows basic map with bus stop markers
 //
 
 import SwiftUI
 import MapKit
 import CoreLocation
 
+/// Interactive map view showing bus stops and user location
+/// TODO: Enable Google Maps integration when API key is configured
 struct MapView: View {
     @StateObject private var locationService = LocationService.shared
-    @StateObject private var mapsViewModel = MapsViewModel()
+    // @StateObject private var mapsViewModel = MapsViewModel() // Commented out - requires API
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: -1.9441, longitude: 30.0619), // Kigali
         span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)

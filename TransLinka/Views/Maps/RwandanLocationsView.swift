@@ -8,9 +8,11 @@
 import SwiftUI
 import MapKit
 
+/// View showing Rwandan cities and bus stops
+/// NOTE: Street view requires Google Maps API - currently disabled
 struct RwandanLocationsView: View {
     @StateObject private var locationService = LocationService.shared
-    @StateObject private var mapsService = GoogleMapsService.shared
+    // @StateObject private var mapsService = GoogleMapsService.shared // Commented out - requires API
     @State private var selectedCity: City?
     @State private var showStreetView = false
     @State private var streetViewLocation: CLLocationCoordinate2D?

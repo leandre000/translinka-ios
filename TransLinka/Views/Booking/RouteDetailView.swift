@@ -122,17 +122,24 @@ struct RouteDetailView: View {
                 .cardStyle()
                 .padding(.horizontal, Theme.spacingLarge)
                 
+                // Map features commented out - requires Google Maps API
+                // TODO: Enable when Google Maps API key is configured
+                /*
                 // View on Map Button - Navigate to map view
                 NavigationLink(destination: RouteMapView(route: route)) {
                     SecondaryButton(title: "View on Map", action: {})
                 }
                 .padding(.horizontal, Theme.spacingLarge)
+                */
                 
                 // View Schedule Button - Navigate to schedule view
+                // TODO: Re-enable when BusScheduleView is available
+                /*
                 NavigationLink(destination: BusScheduleView(route: route)) {
                     SecondaryButton(title: "View Schedule", action: {})
                 }
                 .padding(.horizontal, Theme.spacingLarge)
+                */
                 
                 // Select Seats Button
                 PrimaryButton(

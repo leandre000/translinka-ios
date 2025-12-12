@@ -2,13 +2,16 @@
 //  RealTimeTrackingView.swift
 //  TransLinka
 //
-//  Created on 2024
+//  NOTE: This view requires backend integration for real-time bus tracking
+//  Currently shows simulated tracking data
 //
 
 import SwiftUI
 import MapKit
 import CoreLocation
 
+/// Real-time bus tracking view
+/// TODO: Integrate with backend API for live bus locations
 struct RealTimeTrackingView: View {
     let route: Route
     @StateObject private var trackingViewModel = RealTimeTrackingViewModel()

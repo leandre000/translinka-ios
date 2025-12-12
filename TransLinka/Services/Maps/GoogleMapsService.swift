@@ -2,26 +2,38 @@
 //  GoogleMapsService.swift
 //  TransLinka
 //
-//  Created on 2024
+//  NOTE: This service requires Google Maps API key for production
+//  Currently stubbed out for development/testing
 //
 
 import Foundation
 import CoreLocation
 
+/// Google Maps service for directions, places, and street view
+/// TODO: Add Google Maps API key and enable in production
 class GoogleMapsService {
     static let shared = GoogleMapsService()
     
-    private let apiKey = "YOUR_GOOGLE_MAPS_API_KEY" // Replace with actual API key
-    private let baseURL = "https://maps.googleapis.com/maps/api"
+    // MARK: - Commented out for now - requires API key
+    // private let apiKey = "YOUR_GOOGLE_MAPS_API_KEY" // Replace with actual API key
+    // private let baseURL = "https://maps.googleapis.com/maps/api"
     
     private init() {}
     
-    // Get directions between two points
+    // MARK: - Stubbed Methods (commented out real implementation)
+    
+    /// Get directions between two points
+    /// TODO: Enable when Google Maps API key is configured
     func getDirections(
         from origin: CLLocationCoordinate2D,
         to destination: CLLocationCoordinate2D,
         mode: TravelMode = .driving
     ) async throws -> RouteResponse {
+        // Simulate API call delay
+        try await Task.sleep(nanoseconds: 1_000_000_000)
+        
+        // Stub response - replace with actual API call when ready
+        /*
         let urlString = "\(baseURL)/directions/json?origin=\(origin.latitude),\(origin.longitude)&destination=\(destination.latitude),\(destination.longitude)&mode=\(mode.rawValue)&key=\(apiKey)"
         
         guard let url = URL(string: urlString) else {
@@ -37,120 +49,67 @@ class GoogleMapsService {
             polyline: response.routes.first?.overview_polyline.points ?? "",
             steps: response.routes.first?.legs.first?.steps ?? []
         )
+        */
+        
+        // Return stub data
+        return RouteResponse(
+            distance: 50000, // 50km
+            duration: 3600, // 1 hour
+            polyline: "",
+            steps: []
+        )
     }
     
-    // Get nearby bus stops
+    /// Get nearby bus stops
+    /// TODO: Enable when Google Maps API key is configured
     func getNearbyBusStops(
         location: CLLocationCoordinate2D,
         radius: Int = 1000
     ) async throws -> [BusStop] {
-        let urlString = "\(baseURL)/place/nearbysearch/json?location=\(location.latitude),\(location.longitude)&radius=\(radius)&type=bus_station&key=\(apiKey)"
-        
-        guard let url = URL(string: urlString) else {
-            throw MapsError.invalidURL
-        }
-        
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(GooglePlacesResponse.self, from: data)
-        
-        return response.results.map { place in
-            BusStop(
-                id: place.place_id,
-                name: place.name,
-                location: CLLocationCoordinate2D(
-                    latitude: place.geometry.location.lat,
-                    longitude: place.geometry.location.lng
-                ),
-                address: place.vicinity ?? "",
-                rating: place.rating ?? 0.0
-            )
-        }
+        // Stub implementation
+        try await Task.sleep(nanoseconds: 500_000_000)
+        return []
     }
     
-    // Get place details with photos (for Rwandan locations)
+    /// Search for places
+    /// TODO: Enable when Google Maps API key is configured
+    func searchPlaces(query: String) async throws -> [Place] {
+        // Stub implementation
+        try await Task.sleep(nanoseconds: 500_000_000)
+        return []
+    }
+    
+    /// Get place details
+    /// TODO: Enable when Google Maps API key is configured
     func getPlaceDetails(placeId: String) async throws -> PlaceDetails {
-        let urlString = "\(baseURL)/place/details/json?place_id=\(placeId)&fields=name,geometry,photos,formatted_address,rating&key=\(apiKey)"
-        
-        guard let url = URL(string: urlString) else {
-            throw MapsError.invalidURL
-        }
-        
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(GooglePlaceDetailsResponse.self, from: data)
-        
-        let place = response.result
-        var photoURLs: [String] = []
-        
-        if let photos = place.photos {
-            for photo in photos.prefix(3) {
-                let photoURL = "\(baseURL)/place/photo?maxwidth=800&photoreference=\(photo.photo_reference)&key=\(apiKey)"
-                photoURLs.append(photoURL)
-            }
-        }
-        
+        // Stub implementation
+        try await Task.sleep(nanoseconds: 500_000_000)
         return PlaceDetails(
-            id: placeId,
-            name: place.name,
-            address: place.formatted_address ?? "",
-            location: CLLocationCoordinate2D(
-                latitude: place.geometry.location.lat,
-                longitude: place.geometry.location.lng
-            ),
-            rating: place.rating ?? 0.0,
-            photoURLs: photoURLs
+            name: "",
+            address: "",
+            rating: 0.0,
+            photos: []
         )
     }
     
-    // Get street view image for Rwandan roads
+    /// Get street view image
+    /// TODO: Enable when Google Maps API key is configured
     func getStreetViewImage(
         location: CLLocationCoordinate2D,
-        size: String = "800x600",
-        heading: Int = 0,
-        pitch: Int = 0
-    ) -> String {
-        return "\(baseURL)/streetview?size=\(size)&location=\(location.latitude),\(location.longitude)&heading=\(heading)&pitch=\(pitch)&key=\(apiKey)"
-    }
-    
-    // Search for places (especially Rwandan locations)
-    func searchPlaces(
-        query: String,
-        location: CLLocationCoordinate2D? = nil,
-        radius: Int = 5000
-    ) async throws -> [Place] {
-        var urlString = "\(baseURL)/place/textsearch/json?query=\(query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")&key=\(apiKey)"
-        
-        if let location = location {
-            urlString += "&location=\(location.latitude),\(location.longitude)&radius=\(radius)"
-        }
-        
-        guard let url = URL(string: urlString) else {
-            throw MapsError.invalidURL
-        }
-        
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(GooglePlacesResponse.self, from: data)
-        
-        return response.results.map { place in
-            Place(
-                id: place.place_id,
-                name: place.name,
-                address: place.formatted_address ?? place.vicinity ?? "",
-                location: CLLocationCoordinate2D(
-                    latitude: place.geometry.location.lat,
-                    longitude: place.geometry.location.lng
-                ),
-                rating: place.rating ?? 0.0,
-                types: place.types ?? []
-            )
-        }
+        size: CGSize = CGSize(width: 400, height: 300)
+    ) async throws -> Data {
+        // Stub implementation
+        try await Task.sleep(nanoseconds: 500_000_000)
+        return Data()
     }
 }
 
+// MARK: - Supporting Types
+
 enum TravelMode: String {
-    case driving
-    case walking
-    case bicycling
-    case transit
+    case driving = "driving"
+    case walking = "walking"
+    case transit = "transit"
 }
 
 struct RouteResponse {
@@ -167,51 +126,47 @@ struct RouteStep {
     let polyline: String
 }
 
-struct BusStop: Identifiable {
+struct BusStop {
     let id: String
     let name: String
-    let location: CLLocationCoordinate2D
-    let address: String
-    let rating: Double
+    let coordinate: CLLocationCoordinate2D
+    let rating: Double?
 }
 
-struct Place: Identifiable {
+struct Place {
     let id: String
     let name: String
-    let address: String
-    let location: CLLocationCoordinate2D
-    let rating: Double
-    let types: [String]
+    let coordinate: CLLocationCoordinate2D
 }
 
 struct PlaceDetails {
-    let id: String
     let name: String
     let address: String
-    let location: CLLocationCoordinate2D
     let rating: Double
-    let photoURLs: [String]
+    let photos: [String]
 }
+
+// MARK: - Error Types
 
 enum MapsError: LocalizedError {
     case invalidURL
-    case noResults
-    case apiError(String)
+    case apiKeyMissing
+    case networkError
     
     var errorDescription: String? {
         switch self {
         case .invalidURL:
             return "Invalid URL"
-        case .noResults:
-            return "No results found"
-        case .apiError(let message):
-            return message
+        case .apiKeyMissing:
+            return "Google Maps API key is missing"
+        case .networkError:
+            return "Network error occurred"
         }
     }
 }
 
-// MARK: - Google API Response Models
-
+// MARK: - Commented out Google API Response Models
+/*
 struct GoogleDirectionsResponse: Codable {
     let routes: [GoogleRoute]
 }
@@ -247,43 +202,4 @@ struct GoogleDuration: Codable {
 struct GooglePolyline: Codable {
     let points: String
 }
-
-struct GooglePlacesResponse: Codable {
-    let results: [GooglePlace]
-}
-
-struct GooglePlace: Codable {
-    let place_id: String
-    let name: String
-    let formatted_address: String?
-    let vicinity: String?
-    let geometry: GoogleGeometry
-    let rating: Double?
-    let types: [String]?
-}
-
-struct GoogleGeometry: Codable {
-    let location: GoogleLocation
-}
-
-struct GoogleLocation: Codable {
-    let lat: Double
-    let lng: Double
-}
-
-struct GooglePlaceDetailsResponse: Codable {
-    let result: GooglePlaceDetails
-}
-
-struct GooglePlaceDetails: Codable {
-    let name: String
-    let formatted_address: String?
-    let geometry: GoogleGeometry
-    let rating: Double?
-    let photos: [GooglePhoto]?
-}
-
-struct GooglePhoto: Codable {
-    let photo_reference: String
-}
-
+*/

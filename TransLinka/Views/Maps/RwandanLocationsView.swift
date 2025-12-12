@@ -45,8 +45,9 @@ struct RwandanLocationsView: View {
                         
                         ForEach(locationService.rwandanBusStops, id: \.name) { busStop in
                             BusStopLocationCard(busStop: busStop) {
-                                streetViewLocation = busStop.coordinate
-                                showStreetView = true
+                                // Street view commented out - requires Google Maps API
+                                // streetViewLocation = busStop.coordinate
+                                // showStreetView = true
                             }
                         }
                     }
@@ -67,74 +68,8 @@ struct RwandanLocationsView: View {
     }
 }
 
-struct CityCard: View {
-    let city: City
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(city.name)
-                        .font(.headline)
-                        .foregroundColor(Theme.textPrimary)
-                    
-                    Text("Tap to view details")
-                        .font(.caption)
-                        .foregroundColor(Theme.textSecondary)
-                }
-                
-                Spacer()
-                
-                Image(systemName: "chevron.right")
-                    .foregroundColor(Theme.textSecondary)
-            }
-            .padding()
-            .cardStyle()
-            .padding(.horizontal)
-        }
-    }
-}
-
-struct BusStopLocationCard: View {
-    let busStop: BusStopLocation
-    let onViewStreet: () -> Void
-    
-    var body: some View {
-        HStack {
-            Image(systemName: "mappin.circle.fill")
-                .font(.title2)
-                .foregroundColor(Theme.primaryBlue)
-            
-            VStack(alignment: .leading, spacing: 4) {
-                Text(busStop.name)
-                    .font(.headline)
-                
-                Text(busStop.city)
-                    .font(.subheadline)
-                    .foregroundColor(Theme.textSecondary)
-            }
-            
-            Spacer()
-            
-            Button(action: onViewStreet) {
-                HStack {
-                    Image(systemName: "camera.fill")
-                    Text("View")
-                }
-                .font(.subheadline)
-                .foregroundColor(Theme.primaryBlue)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 6)
-                .background(Theme.primaryBlue.opacity(0.1))
-                .cornerRadius(8)
-            }
-        }
-        .padding()
-        .cardStyle()
-        .padding(.horizontal)
-    }
-}
+// CityCard and BusStopLocationCard are now in Views/Components/
+// Import them from there
 
 struct CityDetailView: View {
     let city: City

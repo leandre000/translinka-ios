@@ -101,14 +101,6 @@ extension LocationService: CLLocationManagerDelegate {
     }
 }
 
-struct City {
-    let name: String
-    let coordinate: CLLocationCoordinate2D
-}
-
-struct BusStopLocation {
-    let name: String
-    let coordinate: CLLocationCoordinate2D
-    let city: String
-}
+// City and BusStopLocation are now in Models/LocationModels.swift
+// Import them from there
 

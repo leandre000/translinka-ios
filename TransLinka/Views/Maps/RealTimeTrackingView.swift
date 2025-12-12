@@ -221,18 +221,8 @@ class RealTimeTrackingViewModel: ObservableObject {
     }
 }
 
-struct BusLocation: Identifiable {
-    let id = UUID()
-    let busNumber: String
-    let coordinate: CLLocationCoordinate2D
-    let speed: Double // km/h
-    let heading: Double // degrees
-}
-
-struct NextStop {
-    let name: String
-    let distance: Double // meters
-}
+// BusLocation and NextStop are now in Models/LocationModels.swift
+// Import them from there
 
 extension Route {
     var departureLocation: CLLocationCoordinate2D? {

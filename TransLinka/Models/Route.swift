@@ -53,3 +53,16 @@ struct Route: Identifiable, Codable, Hashable {
     }
 }
 
+// MARK: - Route Location Extensions
+extension Route {
+    /// Get departure location coordinates from origin city name
+    var departureLocation: CLLocationCoordinate2D? {
+        return LocationService.shared.rwandanCities.first { $0.name == origin }?.coordinate
+    }
+    
+    /// Get arrival location coordinates from destination city name
+    var arrivalLocation: CLLocationCoordinate2D? {
+        return LocationService.shared.rwandanCities.first { $0.name == destination }?.coordinate
+    }
+}
+

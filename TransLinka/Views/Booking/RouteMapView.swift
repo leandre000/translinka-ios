@@ -52,7 +52,8 @@ struct RouteMapView: View {
                 }
             }
             .onAppear {
-                loadRoute()
+                // loadRoute() // Commented out - requires Google Maps API
+                isLoading = false
             }
             
             if isLoading {
@@ -67,6 +68,8 @@ struct RouteMapView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
     
+    // MARK: - Commented out - requires Google Maps API
+    /*
     private func loadRoute() {
         guard let origin = route.departureLocation,
               let destination = route.arrivalLocation else {
@@ -103,17 +106,9 @@ struct RouteMapView: View {
             }
         }
     }
+    */
 }
 
-struct RouteAnnotation: Identifiable {
-    let id: String
-    let coordinate: CLLocationCoordinate2D
-    let title: String
-    let type: AnnotationType
-    
-    enum AnnotationType {
-        case origin
-        case destination
-    }
-}
+// RouteAnnotation is now in Views/Components/
+// Import it from there
 

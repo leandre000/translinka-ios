@@ -162,75 +162,8 @@ struct HomeView: View {
     }
 }
 
-struct RecentBookingCard: View {
-    let booking: Booking
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: Theme.spacingSmall) {
-            if let route = booking.route {
-                HStack {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(route.origin)
-                            .font(.headline)
-                            .foregroundColor(Theme.textPrimary)
-                        
-                        Image(systemName: "arrow.down")
-                            .font(.caption)
-                            .foregroundColor(Theme.textSecondary)
-                        
-                        Text(route.destination)
-                            .font(.headline)
-                            .foregroundColor(Theme.textPrimary)
-                    }
-                    
-                    Spacer()
-                    
-                    VStack(alignment: .trailing, spacing: 4) {
-                            Text(route.departureTime.timeString)
-                                .font(.subheadline)
-                                .foregroundColor(Theme.textSecondary)
-                            
-                            Text(route.priceString)
-                                .font(.headline)
-                                .foregroundColor(Theme.primaryBlue)
-                    }
-                }
-            }
-            
-            Text(booking.bookingDate, style: .date)
-                .font(.caption)
-                .foregroundColor(Theme.textSecondary)
-        }
-        .padding()
-        .frame(width: 200)
-        .cardStyle()
-    }
-}
-
-struct QuickActionCard: View {
-    let icon: String
-    let title: String
-    let color: Color
-    let action: () -> Void
-    
-    var body: some View {
-        Button(action: action) {
-            VStack(spacing: Theme.spacingSmall) {
-                Image(systemName: icon)
-                    .font(.system(size: 30))
-                    .foregroundColor(color)
-                
-                Text(title)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-                    .foregroundColor(Theme.textPrimary)
-            }
-            .frame(maxWidth: .infinity)
-            .frame(height: 100)
-            .cardStyle()
-        }
-    }
-}
+// RecentBookingCard and QuickActionCard are now in Views/Components/
+// Import them from there
 
 #Preview {
     HomeView()

@@ -99,4 +99,3 @@ This is a professional project built for a global competition. All code follows 
 ## License
 
 Copyright © 2024 TransLinka. All rights reserved.
-

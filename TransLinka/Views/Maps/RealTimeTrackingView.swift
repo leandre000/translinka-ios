@@ -102,7 +102,7 @@ struct RealTimeTrackingView: View {
                             
                             Spacer()
                             
-                            Text("\(Int(nextStop.distance))m")
+                            Text(nextStop.distance.distanceString)
                                 .font(.headline)
                                 .foregroundColor(Theme.primaryBlue)
                         }
@@ -136,7 +136,8 @@ class RealTimeTrackingViewModel: ObservableObject {
             busNumber: route.busNumber,
             coordinate: route.departureLocation ?? CLLocationCoordinate2D(latitude: -1.9441, longitude: 30.0619),
             speed: 0,
-            heading: 0
+            heading: 0,
+            timestamp: Date()
         )
         
         busLocations = [initialLocation]
@@ -172,7 +173,8 @@ class RealTimeTrackingViewModel: ObservableObject {
             busNumber: bus.busNumber,
             coordinate: CLLocationCoordinate2D(latitude: newLat, longitude: newLng),
             speed: 45, // km/h
-            heading: calculateHeading(from: bus.coordinate, to: destination)
+            heading: calculateHeading(from: bus.coordinate, to: destination),
+            timestamp: Date()
         )
         
         currentBus = newLocation
@@ -209,7 +211,13 @@ class RealTimeTrackingViewModel: ObservableObject {
             let nearestStop = LocationService.shared.getNearestBusStop(to: bus.coordinate)
             if let stop = nearestStop {
                 let distance = LocationService.shared.getDistance(from: bus.coordinate, to: stop.coordinate)
-                nextStop = NextStop(name: stop.name, distance: distance)
+                let eta = distance / 1000 / (bus.speed / 3600) // Calculate ETA in seconds
+                nextStop = NextStop(
+                    name: stop.name,
+                    coordinate: stop.coordinate,
+                    distance: distance,
+                    eta: eta
+                )
             }
         }
     }
@@ -222,17 +230,5 @@ class RealTimeTrackingViewModel: ObservableObject {
 }
 
 // BusLocation and NextStop are now in Models/LocationModels.swift
-// Import them from there
-
-extension Route {
-    var departureLocation: CLLocationCoordinate2D? {
-        // Get coordinates from origin name
-        return LocationService.shared.rwandanCities.first { $0.name == origin }?.coordinate
-    }
-    
-    var arrivalLocation: CLLocationCoordinate2D? {
-        // Get coordinates from destination name
-        return LocationService.shared.rwandanCities.first { $0.name == destination }?.coordinate
-    }
-}
+// Route location extensions are now in Models/Route.swift
 

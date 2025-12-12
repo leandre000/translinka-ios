@@ -122,6 +122,36 @@ struct RouteDetailView: View {
                 .cardStyle()
                 .padding(.horizontal, Theme.spacingLarge)
                 
+                // View on Map Button
+                NavigationLink(destination: RouteMapView(route: route)) {
+                    HStack {
+                        Image(systemName: "map.fill")
+                        Text("View on Map")
+                    }
+                    .font(.headline)
+                    .foregroundColor(Theme.primaryBlue)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .background(Theme.primaryBlue.opacity(0.1))
+                    .cornerRadius(Theme.cornerRadiusMedium)
+                }
+                .padding(.horizontal, Theme.spacingLarge)
+                
+                // View Schedule Button
+                NavigationLink(destination: BusScheduleView(route: route)) {
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text("View Schedule")
+                    }
+                    .font(.headline)
+                    .foregroundColor(Theme.primaryBlue)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .background(Theme.primaryBlue.opacity(0.1))
+                    .cornerRadius(Theme.cornerRadiusMedium)
+                }
+                .padding(.horizontal, Theme.spacingLarge)
+                
                 // Select Seats Button
                 Button(action: {
                     showSeatSelection = true

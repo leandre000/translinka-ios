@@ -93,34 +93,50 @@ struct HomeView: View {
                             .padding(.horizontal, Theme.spacingLarge)
                         
                         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: Theme.spacingMedium) {
+                            NavigationLink(destination: MapView()) {
+                                QuickActionCard(
+                                    icon: "map.fill",
+                                    title: "Map & Bus Stops",
+                                    color: Theme.primaryBlue
+                                ) {}
+                            }
+                            
+                            NavigationLink(destination: RwandanLocationsView()) {
+                                QuickActionCard(
+                                    icon: "mappin.circle.fill",
+                                    title: "Rwandan Locations",
+                                    color: Theme.accentGreen
+                                ) {}
+                            }
+                            
                             QuickActionCard(
                                 icon: "qrcode.viewfinder",
                                 title: "Scan Ticket",
-                                color: Theme.primaryBlue
+                                color: Theme.primaryBlueDark
                             ) {
                                 // Navigate to QR scanner
                             }
                             
-                            QuickActionCard(
-                                icon: "arkit",
-                                title: "AR Navigation",
-                                color: Theme.accentGreen
-                            ) {
-                                // Navigate to AR
+                            NavigationLink(destination: ARNavigationView()) {
+                                QuickActionCard(
+                                    icon: "arkit",
+                                    title: "AR Navigation",
+                                    color: Theme.accentOrange
+                                ) {}
+                            }
+                            
+                            NavigationLink(destination: ChatView()) {
+                                QuickActionCard(
+                                    icon: "message.fill",
+                                    title: "Chat Support",
+                                    color: Theme.accentGreen
+                                ) {}
                             }
                             
                             QuickActionCard(
-                                icon: "message.fill",
-                                title: "Chat Support",
-                                color: Theme.accentOrange
-                            ) {
-                                // Navigate to chat
-                            }
-                            
-                            QuickActionCard(
-                                icon: "map.fill",
+                                icon: "magnifyingglass",
                                 title: "Find Routes",
-                                color: Theme.primaryBlueDark
+                                color: Theme.primaryBlue
                             ) {
                                 showSearchResults = true
                             }

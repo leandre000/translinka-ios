@@ -186,13 +186,13 @@ struct RecentBookingCard: View {
                     Spacer()
                     
                     VStack(alignment: .trailing, spacing: 4) {
-                        Text(route.departureTime, style: .time)
-                            .font(.subheadline)
-                            .foregroundColor(Theme.textSecondary)
-                        
-                        Text("$\(route.price, specifier: "%.2f")")
-                            .font(.headline)
-                            .foregroundColor(Theme.primaryBlue)
+                            Text(route.departureTime.timeString)
+                                .font(.subheadline)
+                                .foregroundColor(Theme.textSecondary)
+                            
+                            Text(route.priceString)
+                                .font(.headline)
+                                .foregroundColor(Theme.primaryBlue)
                     }
                 }
             }

@@ -112,7 +112,7 @@ struct PaymentView: View {
                         .padding(.horizontal, Theme.spacingLarge)
                     }
                     
-                    // Total Amount
+                    // Total Amount - Display formatted currency
                     VStack(spacing: Theme.spacingSmall) {
                         HStack {
                             Text("Total Amount")
@@ -120,7 +120,7 @@ struct PaymentView: View {
                             
                             Spacer()
                             
-                            Text("$\(totalPrice, specifier: "%.2f")")
+                            Text(totalPriceString)
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .foregroundColor(Theme.primaryBlue)
@@ -130,9 +130,9 @@ struct PaymentView: View {
                     .cardStyle()
                     .padding(.horizontal, Theme.spacingLarge)
                     
-                    // Pay Button
+                    // Pay Button - Process payment and create booking
                     PrimaryButton(
-                        title: "Pay $\(totalPrice, specifier: "%.2f")",
+                        title: "Pay \(totalPriceString)",
                         action: {
                             Task {
                                 if let booking = await bookingViewModel.createBooking(

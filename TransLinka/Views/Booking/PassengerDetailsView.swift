@@ -89,7 +89,7 @@ struct PassengerDetailsView: View {
                             VStack(alignment: .trailing, spacing: 4) {
                                 Text("\(bookingViewModel.selectedSeats.count) seat(s)")
                                     .font(.subheadline)
-                                Text("$\(route.price * Double(bookingViewModel.selectedSeats.count), specifier: "%.2f")")
+                                Text((route.price * Double(bookingViewModel.selectedSeats.count)).currencyString)
                                     .font(.headline)
                                     .foregroundColor(Theme.primaryBlue)
                             }
@@ -106,7 +106,7 @@ struct PassengerDetailsView: View {
                     .cardStyle()
                     .padding(.horizontal, Theme.spacingLarge)
                     
-                    // Continue Button
+                    // Continue Button - Validates inputs before proceeding
                     PrimaryButton(
                         title: "Continue to Payment",
                         action: { showPayment = true },

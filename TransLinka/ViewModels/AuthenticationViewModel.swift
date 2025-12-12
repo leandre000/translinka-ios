@@ -37,19 +37,19 @@ class AuthenticationViewModel: ObservableObject {
     func signUp(fullName: String, email: String, password: String, confirmPassword: String) async {
         // Validate password match
         guard password == confirmPassword else {
-            errorMessage = "Passwords do not match"
+            errorMessage = ErrorMessages.passwordsDoNotMatch
             return
         }
         
         // Validate password length
-        guard password.count >= 6 else {
-            errorMessage = "Password must be at least 6 characters"
+        guard password.count >= AppConstants.minPasswordLength else {
+            errorMessage = ErrorMessages.invalidPassword
             return
         }
         
         // Validate email format
         guard email.isValidEmail else {
-            errorMessage = "Please enter a valid email address"
+            errorMessage = ErrorMessages.invalidEmail
             return
         }
         
@@ -74,7 +74,7 @@ class AuthenticationViewModel: ObservableObject {
     func signIn(email: String, password: String) async {
         // Validate email format
         guard email.isValidEmail else {
-            errorMessage = "Please enter a valid email address"
+            errorMessage = ErrorMessages.invalidEmail
             return
         }
         

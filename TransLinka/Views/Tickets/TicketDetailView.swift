@@ -61,15 +61,15 @@ struct TicketDetailView: View {
                             
                             Divider()
                             
-                            // Details Grid
+                            // Details Grid - Use model computed properties for formatting
                             VStack(spacing: Theme.spacingMedium) {
-                                DetailRow(icon: "calendar", label: "Date", value: route.departureTime, style: .date)
-                                DetailRow(icon: "clock", label: "Departure", value: route.departureTime, style: .time)
-                                DetailRow(icon: "clock.fill", label: "Arrival", value: route.arrivalTime, style: .time)
-                                DetailRow(icon: "person.2.fill", label: "Seats", value: booking.selectedSeats.sorted().map { String($0) }.joined(separator: ", "))
+                                DetailRow(icon: "calendar", label: "Date", value: route.departureTime.dateString)
+                                DetailRow(icon: "clock", label: "Departure", value: route.departureTime.timeString)
+                                DetailRow(icon: "clock.fill", label: "Arrival", value: route.arrivalTime.timeString)
+                                DetailRow(icon: "person.2.fill", label: "Seats", value: booking.seatsString)
                                 DetailRow(icon: "bus.fill", label: "Bus", value: route.busNumber)
                                 DetailRow(icon: "person.fill", label: "Passenger", value: booking.passengerName)
-                                DetailRow(icon: "dollarsign.circle.fill", label: "Amount", value: "$\(booking.totalPrice, specifier: "%.2f")")
+                                DetailRow(icon: "dollarsign.circle.fill", label: "Amount", value: booking.totalPriceString)
                             }
                             
                             if let hash = booking.blockchainHash {
@@ -99,30 +99,19 @@ struct TicketDetailView: View {
                     
                     // Actions
                     VStack(spacing: Theme.spacingMedium) {
-                        Button(action: {
-                            // Share ticket
-                        }) {
-                            HStack {
-                                Image(systemName: "square.and.arrow.up")
-                                Text("Share Ticket")
+                        PrimaryButton(
+                            title: "Share Ticket",
+                            action: {
+                                // Share ticket functionality
                             }
-                            .primaryButtonStyle()
-                        }
+                        )
                         
-                        Button(action: {
-                            // Validate with NFC
-                        }) {
-                            HStack {
-                                Image(systemName: "waveform")
-                                Text("Validate with NFC")
+                        SecondaryButton(
+                            title: "Validate with NFC",
+                            action: {
+                                // NFC validation functionality
                             }
-                            .font(.headline)
-                            .foregroundColor(Theme.primaryBlue)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 50)
-                            .background(Color.gray.opacity(0.1))
-                            .cornerRadius(Theme.cornerRadiusMedium)
-                        }
+                        )
                     }
                     .padding(.horizontal, Theme.spacingLarge)
                     .padding(.bottom, Theme.spacingLarge)

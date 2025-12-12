@@ -190,20 +190,14 @@ class RealTimeTrackingViewModel: ObservableObject {
         return atan2(y, x) * 180 / .pi
     }
     
+    /// Update estimated time of arrival based on current bus location and speed
     private func updateETA() {
         guard let bus = currentBus, let route = currentRoute else { return }
         let destination = route.arrivalLocation ?? CLLocationCoordinate2D(latitude: -1.9441, longitude: 30.0619)
         
         let distance = calculateDistance(from: bus.coordinate, to: destination)
-        let timeInMinutes = Int((distance / 1000) / (bus.speed / 60))
-        
-        if timeInMinutes < 60 {
-            eta = "\(timeInMinutes) min"
-        } else {
-            let hours = timeInMinutes / 60
-            let minutes = timeInMinutes % 60
-            eta = "\(hours)h \(minutes)m"
-        }
+        let timeInSeconds = (distance / 1000) / (bus.speed / 3600) // Convert to seconds
+        eta = Date.formatDuration(timeInSeconds)
     }
     
     private func updateNextStop() {

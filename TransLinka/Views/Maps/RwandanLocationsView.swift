@@ -167,27 +167,27 @@ struct CityDetailView: View {
                             .padding()
                         }
                         
-                        // City Info
-                        VStack(alignment: .leading, spacing: Theme.spacingMedium) {
-                            Text(details.name)
-                                .font(.title)
-                                .fontWeight(.bold)
-                            
-                            Text(details.address)
-                                .font(.subheadline)
-                                .foregroundColor(Theme.textSecondary)
-                            
-                            if details.rating > 0 {
-                                HStack {
-                                    Image(systemName: "star.fill")
-                                        .foregroundColor(.yellow)
-                                    Text("\(details.rating, specifier: "%.1f")")
-                                        .fontWeight(.medium)
+                        // City Info - Use CardView for consistency
+                        CardView {
+                            VStack(alignment: .leading, spacing: Theme.spacingMedium) {
+                                Text(details.name)
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                
+                                Text(details.address)
+                                    .font(.subheadline)
+                                    .foregroundColor(Theme.textSecondary)
+                                
+                                if details.rating > 0 {
+                                    HStack {
+                                        Image(systemName: "star.fill")
+                                            .foregroundColor(.yellow)
+                                        Text("\(details.rating, specifier: "%.1f")")
+                                            .fontWeight(.medium)
+                                    }
                                 }
                             }
                         }
-                        .padding()
-                        .cardStyle()
                         .padding(.horizontal)
                         
                         // Map View

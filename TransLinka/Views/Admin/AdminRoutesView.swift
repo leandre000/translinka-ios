@@ -57,14 +57,14 @@ struct AdminRouteRow: View {
                 .font(.headline)
             
             HStack {
-                Text(route.departureTime, style: .time)
+                Text(route.departureTime.timeString)
                     .font(.subheadline)
                     .foregroundColor(Theme.textSecondary)
                 
                 Text("•")
                     .foregroundColor(Theme.textSecondary)
                 
-                Text("$\(route.price, specifier: "%.2f")")
+                Text(route.priceString)
                     .font(.subheadline)
                     .foregroundColor(Theme.primaryBlue)
             }
@@ -86,9 +86,9 @@ struct AdminRouteDetailView: View {
                 
                 DetailSection(title: "Origin", value: route.origin)
                 DetailSection(title: "Destination", value: route.destination)
-                DetailSection(title: "Departure", value: route.departureTime, style: .date)
-                DetailSection(title: "Arrival", value: route.arrivalTime, style: .date)
-                DetailSection(title: "Price", value: "$\(route.price, specifier: "%.2f")")
+                DetailSection(title: "Departure", value: route.departureTime.dateString)
+                DetailSection(title: "Arrival", value: route.arrivalTime.dateString)
+                DetailSection(title: "Price", value: route.priceString)
                 DetailSection(title: "Bus Number", value: route.busNumber)
                 DetailSection(title: "Available Seats", value: "\(route.availableSeats)/\(route.totalSeats)")
             }

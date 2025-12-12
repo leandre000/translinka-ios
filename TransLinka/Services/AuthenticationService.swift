@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Service handling authentication operations
+/// TODO: Replace with backend API integration
 class AuthenticationService {
     static let shared = AuthenticationService()
     
@@ -18,23 +20,36 @@ class AuthenticationService {
         loadUser()
     }
     
+    /// Register a new user
+    /// - Parameters:
+    ///   - fullName: User's full name
+    ///   - email: User's email address
+    ///   - password: User's password (will be hashed in production)
+    /// - Returns: Created user object
+    /// - Note: In production, this calls backend API
     func signUp(fullName: String, email: String, password: String) async throws -> User {
-        // Simulate API call
+        // Simulate API call delay
         try await Task.sleep(nanoseconds: 1_000_000_000)
         
-        // In production, this would call a real API
+        // TODO: Replace with actual API call
         let user = User(fullName: fullName, email: email, isAdmin: false)
         currentUser = user
         saveUser(user)
         return user
     }
     
+    /// Sign in existing user
+    /// - Parameters:
+    ///   - email: User's email
+    ///   - password: User's password
+    /// - Returns: Authenticated user object
+    /// - Note: Admin access for email "admin@translinka.com"
     func signIn(email: String, password: String) async throws -> User {
-        // Simulate API call
+        // Simulate API call delay
         try await Task.sleep(nanoseconds: 1_000_000_000)
         
-        // In production, this would call a real API
-        // For demo, create a user if email is admin@translinka.com
+        // TODO: Replace with actual API call
+        // Demo: admin@translinka.com gets admin access
         let isAdmin = email == "admin@translinka.com"
         let user = User(fullName: isAdmin ? "Admin User" : "Jane Doe", email: email, isAdmin: isAdmin)
         currentUser = user

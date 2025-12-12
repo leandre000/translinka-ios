@@ -106,7 +106,7 @@ struct AdminBookingRow: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 4) {
-                Text("$\(booking.totalPrice, specifier: "%.2f")")
+                Text(booking.totalPriceString)
                     .font(.headline)
                     .foregroundColor(Theme.primaryBlue)
                 

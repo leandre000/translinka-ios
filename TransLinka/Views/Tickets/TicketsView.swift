@@ -106,7 +106,7 @@ struct TicketCard: View {
                 // Booking Details
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Seats: \(booking.selectedSeats.sorted().map { String($0) }.joined(separator: ", "))")
+                        Text("Seats: \(booking.seatsString)")
                             .font(.caption)
                             .foregroundColor(Theme.textSecondary)
                         

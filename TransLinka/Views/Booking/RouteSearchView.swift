@@ -144,7 +144,7 @@ struct RouteRowView: View {
                 
                 Spacer()
                 
-                Text(route.departureTime, style: .date)
+                Text(route.departureTime.dateString)
                     .font(.caption)
                     .foregroundColor(Theme.textSecondary)
             }

@@ -36,15 +36,15 @@ struct AdminBookingDetailView: View {
             VStack(alignment: .leading, spacing: Theme.spacingLarge) {
                 if let route = booking.route {
                     DetailSection(title: "Route", value: "\(route.origin) → \(route.destination)")
-                    DetailSection(title: "Date", value: route.departureTime, style: .date)
-                    DetailSection(title: "Time", value: route.departureTime, style: .time)
+                    DetailSection(title: "Date", value: route.departureTime.dateString)
+                    DetailSection(title: "Time", value: route.departureTime.timeString)
                 }
                 
                 DetailSection(title: "Passenger", value: booking.passengerName)
                 DetailSection(title: "Email", value: booking.passengerEmail)
                 DetailSection(title: "Phone", value: booking.passengerPhone)
-                DetailSection(title: "Seats", value: booking.selectedSeats.sorted().map { String($0) }.joined(separator: ", "))
-                DetailSection(title: "Total Price", value: "$\(booking.totalPrice, specifier: "%.2f")")
+                DetailSection(title: "Seats", value: booking.seatsString)
+                DetailSection(title: "Total Price", value: booking.totalPriceString)
                 DetailSection(title: "Status", value: booking.status.rawValue)
                 DetailSection(title: "Booking ID", value: booking.id)
                 

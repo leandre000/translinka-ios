@@ -110,14 +110,14 @@ struct SeatSelectionView: View {
                         .padding(.horizontal)
                     }
                     
-                    Button(action: {
-                        bookingViewModel.selectedSeats = Array(selectedSeats)
-                        showPassengerDetails = true
-                    }) {
-                        Text(selectedSeats.isEmpty ? "Select Seats to Continue" : "Continue")
-                            .primaryButtonStyle()
-                    }
-                    .disabled(selectedSeats.isEmpty)
+                    PrimaryButton(
+                        title: selectedSeats.isEmpty ? "Select Seats to Continue" : "Continue",
+                        action: {
+                            bookingViewModel.selectedSeats = Array(selectedSeats)
+                            showPassengerDetails = true
+                        },
+                        isDisabled: selectedSeats.isEmpty
+                    )
                     .padding(.horizontal)
                 }
                 .padding(.vertical)

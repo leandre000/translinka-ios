@@ -66,11 +66,11 @@ struct RouteDetailView: View {
                                 .font(.title2)
                                 .fontWeight(.bold)
                             
-                            Text(route.arrivalTime, style: .time)
+                            Text(route.arrivalTime.timeString)
                                 .font(.headline)
                                 .foregroundColor(Theme.primaryBlue)
                             
-                            Text(route.arrivalTime, style: .date)
+                            Text(route.arrivalTime.dateString)
                                 .font(.subheadline)
                                 .foregroundColor(Theme.textSecondary)
                         }
@@ -106,14 +106,14 @@ struct RouteDetailView: View {
                 .cardStyle()
                 .padding(.horizontal, Theme.spacingLarge)
                 
-                // Price
+                    // Price - Display formatted price from model
                 HStack {
                     Text("Price per seat")
                         .font(.headline)
                     
                     Spacer()
                     
-                    Text("$\(route.price, specifier: "%.2f")")
+                    Text(route.priceString)
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Theme.primaryBlue)
@@ -122,43 +122,23 @@ struct RouteDetailView: View {
                 .cardStyle()
                 .padding(.horizontal, Theme.spacingLarge)
                 
-                // View on Map Button
+                // View on Map Button - Navigate to map view
                 NavigationLink(destination: RouteMapView(route: route)) {
-                    HStack {
-                        Image(systemName: "map.fill")
-                        Text("View on Map")
-                    }
-                    .font(.headline)
-                    .foregroundColor(Theme.primaryBlue)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .background(Theme.primaryBlue.opacity(0.1))
-                    .cornerRadius(Theme.cornerRadiusMedium)
+                    SecondaryButton(title: "View on Map", action: {})
                 }
                 .padding(.horizontal, Theme.spacingLarge)
                 
-                // View Schedule Button
+                // View Schedule Button - Navigate to schedule view
                 NavigationLink(destination: BusScheduleView(route: route)) {
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text("View Schedule")
-                    }
-                    .font(.headline)
-                    .foregroundColor(Theme.primaryBlue)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .background(Theme.primaryBlue.opacity(0.1))
-                    .cornerRadius(Theme.cornerRadiusMedium)
+                    SecondaryButton(title: "View Schedule", action: {})
                 }
                 .padding(.horizontal, Theme.spacingLarge)
                 
                 // Select Seats Button
-                Button(action: {
-                    showSeatSelection = true
-                }) {
-                    Text("Select Seats")
-                        .primaryButtonStyle()
-                }
+                PrimaryButton(
+                    title: "Select Seats",
+                    action: { showSeatSelection = true }
+                )
                 .padding(.horizontal, Theme.spacingLarge)
             }
             .padding(.vertical, Theme.spacingLarge)

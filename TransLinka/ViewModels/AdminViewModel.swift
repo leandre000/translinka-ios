@@ -27,14 +27,15 @@ class AdminViewModel: ObservableObject {
         loadRoutes()
     }
     
+    /// Load dashboard statistics and recent bookings
+    /// In production, this would fetch from backend API
     func loadDashboardData() {
-        // Calculate statistics
         let allBookings = bookingService.getAllBookings()
         totalBookings = allBookings.count
         totalRevenue = allBookings.reduce(0) { $0 + $1.totalPrice }
         recentBookings = Array(allBookings.suffix(10))
         
-        // In production, these would come from API
+        // TODO: Replace with API call
         totalUsers = 150
         totalRoutes = bookingService.getAllRoutes().count
     }

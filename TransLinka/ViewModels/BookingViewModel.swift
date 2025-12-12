@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// ViewModel managing booking-related state and operations
 @MainActor
 class BookingViewModel: ObservableObject {
     @Published var routes: [Route] = []
@@ -24,26 +25,31 @@ class BookingViewModel: ObservableObject {
         loadBookings()
     }
     
+    /// Load all available routes from service
     func loadRoutes() {
         routes = bookingService.getAllRoutes()
     }
     
+    /// Load user's bookings from service
     func loadBookings() {
         if let userId = AuthenticationService.shared.getCurrentUser()?.id {
             bookings = bookingService.getBookings(for: userId)
         }
     }
     
+    /// Search routes by origin, destination, and date
     func searchRoutes(origin: String, destination: String, date: Date) {
         isLoading = true
         routes = bookingService.searchRoutes(origin: origin, destination: destination, date: date)
         isLoading = false
     }
     
+    /// Select a route for booking
     func selectRoute(_ route: Route) {
         selectedRoute = route
     }
     
+    /// Toggle seat selection (add if not selected, remove if selected)
     func toggleSeat(_ seatNumber: Int) {
         if selectedSeats.contains(seatNumber) {
             selectedSeats.removeAll { $0 == seatNumber }
@@ -52,6 +58,8 @@ class BookingViewModel: ObservableObject {
         }
     }
     
+    /// Create a new booking with blockchain verification
+    /// - Returns: Created booking or nil if error
     func createBooking(
         route: Route,
         passengerName: String,
@@ -60,7 +68,7 @@ class BookingViewModel: ObservableObject {
         seats: [Int]
     ) async -> Booking? {
         guard let userId = AuthenticationService.shared.getCurrentUser()?.id else {
-            errorMessage = "User not authenticated"
+            errorMessage = ErrorMessages.authenticationRequired
             return nil
         }
         

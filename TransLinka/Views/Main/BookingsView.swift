@@ -106,7 +106,7 @@ struct BookingRowView: View {
                     
                     Spacer()
                     
-                    Text(route.departureTime, style: .time)
+                    Text(route.departureTime.timeString)
                         .font(.caption)
                         .foregroundColor(Theme.textSecondary)
                 }

@@ -68,7 +68,7 @@ struct BookingConfirmationView: View {
                             BookingDetailRow(label: "Route", value: "\(route.origin) → \(route.destination)")
                             BookingDetailRow(label: "Date", value: route.departureTime, style: .date)
                             BookingDetailRow(label: "Time", value: route.departureTime, style: .time)
-                            BookingDetailRow(label: "Seats", value: booking.selectedSeats.sorted().map { String($0) }.joined(separator: ", "))
+                            BookingDetailRow(label: "Seats", value: booking.seatsString)
                             BookingDetailRow(label: "Passenger", value: booking.passengerName)
                         }
                         
@@ -92,26 +92,17 @@ struct BookingConfirmationView: View {
                     .cardStyle()
                     .padding(.horizontal, Theme.spacingLarge)
                     
-                    // Actions
+                    // Actions - Use reusable button components
                     VStack(spacing: Theme.spacingMedium) {
-                        Button(action: {
-                            dismiss()
-                        }) {
-                            Text("View Ticket")
-                                .primaryButtonStyle()
-                        }
+                        PrimaryButton(
+                            title: "View Ticket",
+                            action: { dismiss() }
+                        )
                         
-                        Button(action: {
-                            dismiss()
-                        }) {
-                            Text("Done")
-                                .font(.headline)
-                                .foregroundColor(Theme.primaryBlue)
-                                .frame(maxWidth: .infinity)
-                                .frame(height: 50)
-                                .background(Color.gray.opacity(0.1))
-                                .cornerRadius(Theme.cornerRadiusMedium)
-                        }
+                        SecondaryButton(
+                            title: "Done",
+                            action: { dismiss() }
+                        )
                     }
                     .padding(.horizontal, Theme.spacingLarge)
                     .padding(.bottom, Theme.spacingLarge)

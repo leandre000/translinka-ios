@@ -149,12 +149,12 @@ struct BusStopCard: View {
                 }
             }
             
-            Button(action: {
-                // Navigate to this bus stop
-            }) {
-                Text("Get Directions")
-                    .primaryButtonStyle()
-            }
+            PrimaryButton(
+                title: "Get Directions",
+                action: {
+                    // Navigate to this bus stop using Apple Maps
+                }
+            )
         }
         .padding()
         .background(Theme.cardBackground)
@@ -225,13 +225,9 @@ struct RouteDetailsView: View {
         }
     }
     
+    /// Format duration using extension
     private func formatDuration(_ seconds: Int) -> String {
-        let hours = seconds / 3600
-        let minutes = (seconds % 3600) / 60
-        if hours > 0 {
-            return "\(hours)h \(minutes)m"
-        }
-        return "\(minutes)m"
+        Date.formatDuration(TimeInterval(seconds))
     }
     
     private func openInMaps() {

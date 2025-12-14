@@ -6,360 +6,360 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F09CEC1A5BB44112A52E404D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC90EEC15A2447A8D70F1CB /* ContentView.swift */; };
-		2B94C97686D74F8EB03AAD1B /* BusScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4349A6FFB4D2CA90DC9B6 /* BusScheduleView.swift */; };
-		B1F8FD6CB6B743CB9D3DDC02 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F67CB28B664200A65E282C /* FavoritesView.swift */; };
-		5260ACF837D14539B56B5E0F /* LuggageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98872E3500DF42EAB1B677D1 /* LuggageSelectionView.swift */; };
-		BE7787D8BC0A47839A4088B3 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC860D336A44488B7E4F46 /* NotificationsManager.swift */; };
-		4396063605F0487DBFA95237 /* RouteComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4263DF8D041DB8CA97AA7 /* RouteComparisonView.swift */; };
-		4387FD5FD8C942CD8E49E045 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FC91C19A748BC8478F0E7 /* Booking.swift */; };
-		5E8A9AD5AA264030AEE2AF1A /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A000687104834AEBCE2E7 /* Bus.swift */; };
-		3683861E6DA94829AC738933 /* LocationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C4136DD64648729F831BCE /* LocationModels.swift */; };
-		7F5CE64881394BF4A0A73AB6 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD13792CEF48E8B066B90F /* PaymentMethod.swift */; };
-		36A832B6824A4859A7F69B35 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABEBB50A9CB4784BE4966FC /* Route.swift */; };
-		4C350FF9A072453AA4F71992 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D4898B2FA1459186EC6EAD /* User.swift */; };
-		CBFBCDA7051D475281C38B08 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E26E29FE734DA3A44CFAB7 /* AuthenticationService.swift */; };
-		914955C65A654773B444E543 /* BlockchainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BF2CF844544A0971707BE /* BlockchainManager.swift */; };
-		3C9435E3AF844A54816D22FD /* EthereumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA7F033411435D875F107F /* EthereumService.swift */; };
-		EC0C2503A3614D608526BFD1 /* SolanaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C44F533E3F4A438456568D /* SolanaService.swift */; };
-		19D1580690A341CA9659A55D /* BlockchainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679CA4CD95245A0A74263D7 /* BlockchainService.swift */; };
-		21EFC954278741639F579AE7 /* BookingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F7D7E3B8B74B7591C1D0D0 /* BookingService.swift */; };
-		8F68B374BCDA4E47AC6D303D /* ChatbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCC6D708A94B8885B73B08 /* ChatbotService.swift */; };
-		E960A1F39DC542E9BDDEEC80 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB9901453CF4284A9A34C63 /* LocationService.swift */; };
-		79768117AEDE46B1BC4CF9FE /* GoogleMapsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29030DAC4481408DADE26B6A /* GoogleMapsService.swift */; };
-		B1CF3D6634A14C8697B883B0 /* NFCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB45B640FA542BDB6792D3B /* NFCService.swift */; };
-		413F37BC6BA0400DACF19FD7 /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA21677CADC411AAC79CE20 /* QRCodeService.swift */; };
-		B8BAA9A513734B7E852846EB /* TransLinkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978EA61DD220431DA38D56E3 /* TransLinkaApp.swift */; };
-		E82741DCDBCD410892A2F66F /* AdvancedAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D909E58704EA2871380C2 /* AdvancedAnimations.swift */; };
-		E577FBDC7A484659A7276B40 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF321C39E9466B8E691881 /* Animations.swift */; };
-		CD83A00400134F3AA7FDDEC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447C4747D98447B9079DE47 /* Constants.swift */; };
-		F81B39C9190D46369CC512D6 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01C17E48BD4F7285192702 /* CustomTextFieldStyle.swift */; };
-		5C6BF21B1D1D47D381844C30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F870A1F9F465988182FC3 /* Extensions.swift */; };
-		30DAABF3A4FC4694AFE1BD34 /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163E550E938436BA52F2D9B /* ReusableComponents.swift */; };
-		181B0881AE2B410BA87CA208 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0FFDA830B430EA66C200E /* Theme.swift */; };
-		B077A9EA23744D72A5375271 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5001D17DF44B79CA48E4C /* ViewModifiers.swift */; };
-		EBC484441E354715B02AC6F3 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EB04C624748349441A585 /* AdminViewModel.swift */; };
-		E53D9FF2AE614F748AFC70E5 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941485FAF0394672879EF89B /* AuthenticationViewModel.swift */; };
-		461263EBC3974F9EA15D5328 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7D6C2EBA524D45B5F6F22B /* BookingViewModel.swift */; };
-		70E04761C5AF4EF5B0EF412A /* ARNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E9B2B5394443C1806D3D8A /* ARNavigationView.swift */; };
-		53DC0366D5CB4D26943AD64E /* AdminBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5128C969A3D24A9FB6AFE849 /* AdminBookingsView.swift */; };
-		558896C778AF42B496CF4051 /* AdminBusesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E5645E28A4824BF591DC7 /* AdminBusesView.swift */; };
-		6D70A796C8704505863DA406 /* AdminDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113406FED3E74D899477B679 /* AdminDashboardView.swift */; };
-		1BAC5D00D3D6479994214F23 /* AdminRoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C0305A812488290E96C01 /* AdminRoutesView.swift */; };
-		C1CD2126F31843E0A73C88DD /* AdminTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805CD4CF67B4BD98A3C5003 /* AdminTabView.swift */; };
-		61B00DEBEF144BF7A9E320FB /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A44536563D440FB8B72DEE /* ForgotPasswordView.swift */; };
-		EDA39CD36F594A9DA599E9CF /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579E06082BA4DB1983CB129 /* LandingView.swift */; };
-		46D377CED1234D7FA18F73E5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511BF8A5AFE04861A957BE44 /* SignInView.swift */; };
-		513BF9DD7F48460AA05897F0 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D7F903EC8248FD9F9C05BF /* SignUpView.swift */; };
-		C458D51DCF514C7AA39BD602 /* BookingConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD3EB1D27F464ABCF36B99 /* BookingConfirmationView.swift */; };
-		F1A007AC7D184AEC899681E6 /* PassengerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88BFA3E4A994ECDB8C73BF9 /* PassengerDetailsView.swift */; };
-		5FC79221AB6F4A5CBF8CCA5F /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDF233AD0364C949651E848 /* PaymentView.swift */; };
-		C41DEFED45CD478F87D26EBC /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62772D3BBA4B52B9AFCAB2 /* RouteDetailView.swift */; };
-		D916490B34E447F1B1F5AD5E /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4378C44BE14D9CA9E4A56E /* RouteMapView.swift */; };
-		BA2F60EDF67A4F5093122353 /* RouteSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F517A5D67B846709663498F /* RouteSearchView.swift */; };
-		2CB7D7A12CC64E26823BA65A /* SeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC79D9F4D644AC884283C8 /* SeatSelectionView.swift */; };
-		D0BAC5247B1A4C1985817315 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD4992BA23C490DBE69309B /* ChatView.swift */; };
-		7D559E5514D045BDAF9EAF56 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF565C939964DEDAE09D740 /* AnimatedButton.swift */; };
-		B4F219CE93524D7A879F05ED /* BusStopLocationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD6E00EB9F4488BCD51D04 /* BusStopLocationCard.swift */; };
-		48A5EEEFE89F4516A1092896 /* CityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05AB98C255497B9263F61B /* CityCard.swift */; };
-		FC815BA1A4284B6986BF2859 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04902900DBF14B6B98D56209 /* LottieAnimationView.swift */; };
-		D222D41D4FD14288B1D6C872 /* QuickActionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8161E8B4B454DE4AC54DA59 /* QuickActionCard.swift */; };
-		7EFDC3CB1EB54614875BD26A /* RecentBookingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBD3A3076042EB88424ADF /* RecentBookingCard.swift */; };
-		001B778743074562B0C6DCE1 /* RouteAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07973DE10621403EB4B407F0 /* RouteAnnotation.swift */; };
-		E874D6F57B914B67AE82BDBB /* SkeletonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305579A242704656B44D5AEB /* SkeletonLoader.swift */; };
-		E4F18748FE1F440EA8DB83C3 /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8DCD848054414DAA241BE5 /* StatusBadge.swift */; };
-		7181229E27F044FDB939E983 /* BookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B92C33B4C493B8D7F017C /* BookingsView.swift */; };
-		B0BD814CBE9142CFAFE70628 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE78525888C4327A8D53BE4 /* HomeView.swift */; };
-		3181B09AFD9945529D659C73 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC141721F4674A61A69F756D /* MainTabView.swift */; };
-		BA0C361F4FF74E87855EDFDC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2067F9439EC94C6C9C06DAD3 /* MapView.swift */; };
-		FD586B039F044B70A2F88040 /* RealTimeTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D367229CCC74E359013CDBA /* RealTimeTrackingView.swift */; };
-		980AE9ADBB5242C7ADFEF76A /* RwandanLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AAD47757474E00980EEB5D /* RwandanLocationsView.swift */; };
-		BE83C4B6C9414B9A97FBB5AB /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F55712C904F6ABC89F208 /* PaymentMethodsView.swift */; };
-		575732FD6C554D5D89D5AFA1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B423399242BF46A9B94FB336 /* ProfileView.swift */; };
-		AE848F14AB774934B31E6ECE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03E319C1F8F42EB839705D3 /* SettingsView.swift */; };
-		368022AF55B94E40843490E4 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65750E5E7E9C40E687486CFF /* TicketDetailView.swift */; };
-		1A7AEDF1D0424ECCAFB99839 /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A6BA0835B462C8EE33DE4 /* TicketsView.swift */; };
+		13FD708CDBCE41A7A631C572 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E123623294D99B1C3EEE2 /* ContentView.swift */; };
+		33A5A7F1A2844980BF00A157 /* BusScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28633F70207401CB82F5C66 /* BusScheduleView.swift */; };
+		B70F985B411C48A19768338A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D306E2CE76A414BAB5AB5CA /* FavoritesView.swift */; };
+		E45B95E025B34A22921DD9D1 /* LuggageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDB02C0B94A86ACF0E7B3 /* LuggageSelectionView.swift */; };
+		CD001B2990B443358262E360 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590073E698340B480E30E47 /* NotificationsManager.swift */; };
+		C60FA8D8E2B24AAFB7F85B5C /* RouteComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B23B4B611476FB397AAC3 /* RouteComparisonView.swift */; };
+		C0309C8FEF9D42DFBBCBF5D7 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A95310B6A340F08AAC617F /* Booking.swift */; };
+		F408617DBAA245C09A84A0AE /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D64BA8308E4CD397422D38 /* Bus.swift */; };
+		B3C0794A1171487B9C397D2E /* LocationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156267807484478BA96AFB4E /* LocationModels.swift */; };
+		A69A0D2D40144282A173E0E4 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1A3CD469A64F18BA4D7E52 /* PaymentMethod.swift */; };
+		62A610A7CE7C4D02B1790B41 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D73A8E8CB544BB943CC975 /* Route.swift */; };
+		DF1309CB952D49429821E4CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B13FB6B8DEF4219A8A8FFB3 /* User.swift */; };
+		5E864C9D6FFC4B1D96BA6415 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B3A11B2214D90ACEFC5D9 /* AuthenticationService.swift */; };
+		3EB32139EF874CF988CD47D9 /* BlockchainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02168DA693BA43CFAE70AA28 /* BlockchainManager.swift */; };
+		6D755A06782D4F5F958936B3 /* EthereumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E25557DD5A74486883A6AF8 /* EthereumService.swift */; };
+		1B8110800A3042D5A5BC6328 /* SolanaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D42A54C1014CB4958D2312 /* SolanaService.swift */; };
+		DA166FA5F30E4DAB839A6EE1 /* BlockchainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E9A87C27D24F868588A639 /* BlockchainService.swift */; };
+		DD775CFA29A04CC1AC691193 /* BookingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F17ADF2B6043F296B3FD36 /* BookingService.swift */; };
+		9B1D9B2EECC448348467F6EC /* ChatbotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29498EE5DE4F48E4A12EB75E /* ChatbotService.swift */; };
+		E347C5851BF54EEB8B24ECB4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E72575F5B940CEBCAA8072 /* LocationService.swift */; };
+		D3357D173DF548549E7BE92B /* GoogleMapsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F2746427943DA8043B7C9 /* GoogleMapsService.swift */; };
+		3F488CC756D54323B71AA454 /* NFCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38A89BAC5CF4A2D8C692256 /* NFCService.swift */; };
+		2F9EF96F9D5F4550B090AC26 /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59E6856ED914EF9A331EC32 /* QRCodeService.swift */; };
+		1C93F50C7C1841E09C167A05 /* TransLinkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3925339BCDE4596A42B6AC1 /* TransLinkaApp.swift */; };
+		51FD0952562C4DAD96D61A73 /* AdvancedAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54F0FE5EA1443ABA2B9E28D /* AdvancedAnimations.swift */; };
+		71C678C711E64EC19B6E0702 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B354C1488BA4505A6476F52 /* Animations.swift */; };
+		1037186B7C3A448D850B65A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CEE4DBBD846FFAC8CF218 /* Constants.swift */; };
+		9961C0E7692A4D728AF3B7D1 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34E557B44D456AA2E6CE75 /* CustomTextFieldStyle.swift */; };
+		4E69B99BA04B4974A2FFC810 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61B6B227094058924679B1 /* Extensions.swift */; };
+		B7520819EB14477B83594BE2 /* ReusableComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC88A5A42F2D4C1E8599A63D /* ReusableComponents.swift */; };
+		17B04AF27562456CAB829FF4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E040CA46349FBBD7635CC /* Theme.swift */; };
+		5FA2E588D04C4B92B8606E25 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882F4322AF940EFBFC7CF57 /* ViewModifiers.swift */; };
+		0FABE37CFD364D2C8E840E01 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43352B6599744819261CA0E /* AdminViewModel.swift */; };
+		6B97A1CC5CCD4B26BA398452 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8275AC8EC4234890F95A2 /* AuthenticationViewModel.swift */; };
+		239B51544F184F2ABE91AD1B /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DF5B7BCCA41F39D258788 /* BookingViewModel.swift */; };
+		4A61613378F745078231E121 /* ARNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A763C2E2D44224A03232D9 /* ARNavigationView.swift */; };
+		86E7855E5B4D4DF3B6F3EB5F /* AdminBookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB51F3F266D400CA490D053 /* AdminBookingsView.swift */; };
+		F1733DEE3D144C04B31DD0DA /* AdminBusesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B91D599FC14AB9BCBDB78B /* AdminBusesView.swift */; };
+		170D417F48414F019B149E6B /* AdminDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600D25E350041DEBD5916E6 /* AdminDashboardView.swift */; };
+		A479F2D8A31446B69B22DB4B /* AdminRoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07FABA3D27749EE9087DF81 /* AdminRoutesView.swift */; };
+		2FE5F7EDC3FF4A3588003258 /* AdminTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66639120C47543CFA89FA0ED /* AdminTabView.swift */; };
+		3070C00B837246AF881D7A3C /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020CF294585F4A1B97735E69 /* ForgotPasswordView.swift */; };
+		4CE17CAD63354FA7A9500AAE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0AC1D3C6ED4E69B2F17901 /* LandingView.swift */; };
+		11D1B8ADA47740349EB50534 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9013CD2734CAFB228D133 /* SignInView.swift */; };
+		7DCCFB41AC5D492EB8977AB9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DA515129C743CAA0CB798F /* SignUpView.swift */; };
+		9EEB79D171754DACAEA88D81 /* BookingConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519EDC46FABA4F4084345260 /* BookingConfirmationView.swift */; };
+		50FA829CB04643299DD94297 /* PassengerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94703702C11B43ED9EE17DEE /* PassengerDetailsView.swift */; };
+		2030534B81164962B9175690 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF882988C74391873D9AA5 /* PaymentView.swift */; };
+		EC6B0766A6674FA191DFCCC5 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8FFB4339214037BCADCF5F /* RouteDetailView.swift */; };
+		3857163F7BE34BBFA3866749 /* RouteMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B89C33E3A143CD80B4D8AC /* RouteMapView.swift */; };
+		D6ED7F1E07D94651AC8F9F41 /* RouteSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA54243F9D94933BC65CE7C /* RouteSearchView.swift */; };
+		3F437BA2483E43C482E41009 /* SeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE51EEEB1EC4073AE1CBDEA /* SeatSelectionView.swift */; };
+		359E7E0B8EEA4BCBAC9A641A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD8500F23E4B8BA675F2D3 /* ChatView.swift */; };
+		38ECBED491A54103B4D55236 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD63E66E83A49F5ADAB248A /* AnimatedButton.swift */; };
+		5589DEF5B8BE413CA887F7BB /* BusStopLocationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42155897438D4F8F98E31959 /* BusStopLocationCard.swift */; };
+		28922FFFE466443BBF1CA497 /* CityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A62F2B28F4A6CA0A4E4AF /* CityCard.swift */; };
+		9339F45164684735AC69C532 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DB5D8ADBF463C85D0FADB /* LottieAnimationView.swift */; };
+		BE6D6A5612844FFA97CCD87A /* QuickActionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE214D84D34B3F92EDD4DF /* QuickActionCard.swift */; };
+		3742E71479F742AF8EF3B559 /* RecentBookingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CCCE6FA0AF48E587B084EA /* RecentBookingCard.swift */; };
+		6476619037114AF0A38F1AA5 /* RouteAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DEDCC9F80B4586827E9185 /* RouteAnnotation.swift */; };
+		2BAA3DE884A84D98A51D6846 /* SkeletonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D419162191C8437D82EBA34A /* SkeletonLoader.swift */; };
+		DB562DC86F294E299B78CF74 /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A8ACF3F3D4F46B52D48D0 /* StatusBadge.swift */; };
+		3A42F6BC8E16401FA0EB59F0 /* BookingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972137D233B94CB7AD37EF6D /* BookingsView.swift */; };
+		3CF5910EEA8541E0A0C1B2F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC7EFB204843A799D324E3 /* HomeView.swift */; };
+		BC3CC283117E4A448A85DF0A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A69A38C68174C4A9E51F64C /* MainTabView.swift */; };
+		8781E93E08344864B0D0AFAD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E916F5B5444D4E62966892A2 /* MapView.swift */; };
+		293D3B5C4C64440ABE3B42B4 /* RealTimeTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2193FBD643473C9396B878 /* RealTimeTrackingView.swift */; };
+		67364F8E34754A37A6FF8F1E /* RwandanLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48A4F3B0EB4B61810A5363 /* RwandanLocationsView.swift */; };
+		F11B4514210A4AB4A2F8315F /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FCEF1948F4154A9F8DC74 /* PaymentMethodsView.swift */; };
+		637CD93F28244012834874B2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A450CAB99140CE88D8C3B5 /* ProfileView.swift */; };
+		8B271EE3738B406FB4EA5A6E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB542D12E864383B8BBDBB0 /* SettingsView.swift */; };
+		8EFF078C70714A08AC7088D0 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C2A48BE634D21B88E7EEB /* TicketDetailView.swift */; };
+		BB9AB2112B9F4F2D9829CC7C /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C29C576C64A6B9A79F2EE /* TicketsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6FC90EEC15A2447A8D70F1CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ContentView.swift; sourceTree = "<group>"; };
-		22B4349A6FFB4D2CA90DC9B6 /* BusScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/BusScheduleView.swift; sourceTree = "<group>"; };
-		30F67CB28B664200A65E282C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/FavoritesView.swift; sourceTree = "<group>"; };
-		98872E3500DF42EAB1B677D1 /* LuggageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/LuggageSelectionView.swift; sourceTree = "<group>"; };
-		7EAC860D336A44488B7E4F46 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/NotificationsManager.swift; sourceTree = "<group>"; };
-		73C4263DF8D041DB8CA97AA7 /* RouteComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/RouteComparisonView.swift; sourceTree = "<group>"; };
-		3A2FC91C19A748BC8478F0E7 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/Booking.swift; sourceTree = "<group>"; };
-		B42A000687104834AEBCE2E7 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/Bus.swift; sourceTree = "<group>"; };
-		89C4136DD64648729F831BCE /* LocationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/LocationModels.swift; sourceTree = "<group>"; };
-		1CFD13792CEF48E8B066B90F /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/PaymentMethod.swift; sourceTree = "<group>"; };
-		1ABEBB50A9CB4784BE4966FC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/Route.swift; sourceTree = "<group>"; };
-		08D4898B2FA1459186EC6EAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/User.swift; sourceTree = "<group>"; };
-		77E26E29FE734DA3A44CFAB7 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/AuthenticationService.swift; sourceTree = "<group>"; };
-		565BF2CF844544A0971707BE /* BlockchainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Blockchain/BlockchainManager.swift; sourceTree = "<group>"; };
-		BEBA7F033411435D875F107F /* EthereumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Blockchain/EthereumService.swift; sourceTree = "<group>"; };
-		52C44F533E3F4A438456568D /* SolanaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Blockchain/SolanaService.swift; sourceTree = "<group>"; };
-		7679CA4CD95245A0A74263D7 /* BlockchainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/BlockchainService.swift; sourceTree = "<group>"; };
-		39F7D7E3B8B74B7591C1D0D0 /* BookingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/BookingService.swift; sourceTree = "<group>"; };
-		0BFCC6D708A94B8885B73B08 /* ChatbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/ChatbotService.swift; sourceTree = "<group>"; };
-		CAB9901453CF4284A9A34C63 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Location/LocationService.swift; sourceTree = "<group>"; };
-		29030DAC4481408DADE26B6A /* GoogleMapsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Maps/GoogleMapsService.swift; sourceTree = "<group>"; };
-		9AB45B640FA542BDB6792D3B /* NFCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/NFCService.swift; sourceTree = "<group>"; };
-		6FA21677CADC411AAC79CE20 /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/QRCodeService.swift; sourceTree = "<group>"; };
-		978EA61DD220431DA38D56E3 /* TransLinkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/TransLinkaApp.swift; sourceTree = "<group>"; };
-		359D909E58704EA2871380C2 /* AdvancedAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/AdvancedAnimations.swift; sourceTree = "<group>"; };
-		B1DF321C39E9466B8E691881 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Animations.swift; sourceTree = "<group>"; };
-		F447C4747D98447B9079DE47 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Constants.swift; sourceTree = "<group>"; };
-		2E01C17E48BD4F7285192702 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/CustomTextFieldStyle.swift; sourceTree = "<group>"; };
-		1B4F870A1F9F465988182FC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Extensions.swift; sourceTree = "<group>"; };
-		D163E550E938436BA52F2D9B /* ReusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/ReusableComponents.swift; sourceTree = "<group>"; };
-		18D0FFDA830B430EA66C200E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Theme.swift; sourceTree = "<group>"; };
-		2DA5001D17DF44B79CA48E4C /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/ViewModifiers.swift; sourceTree = "<group>"; };
-		C17EB04C624748349441A585 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ViewModels/AdminViewModel.swift; sourceTree = "<group>"; };
-		941485FAF0394672879EF89B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ViewModels/AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		BE7D6C2EBA524D45B5F6F22B /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ViewModels/BookingViewModel.swift; sourceTree = "<group>"; };
-		F5E9B2B5394443C1806D3D8A /* ARNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/AR/ARNavigationView.swift; sourceTree = "<group>"; };
-		5128C969A3D24A9FB6AFE849 /* AdminBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminBookingsView.swift; sourceTree = "<group>"; };
-		760E5645E28A4824BF591DC7 /* AdminBusesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminBusesView.swift; sourceTree = "<group>"; };
-		113406FED3E74D899477B679 /* AdminDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminDashboardView.swift; sourceTree = "<group>"; };
-		E72C0305A812488290E96C01 /* AdminRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminRoutesView.swift; sourceTree = "<group>"; };
-		4805CD4CF67B4BD98A3C5003 /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminTabView.swift; sourceTree = "<group>"; };
-		83A44536563D440FB8B72DEE /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/ForgotPasswordView.swift; sourceTree = "<group>"; };
-		9579E06082BA4DB1983CB129 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/LandingView.swift; sourceTree = "<group>"; };
-		511BF8A5AFE04861A957BE44 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/SignInView.swift; sourceTree = "<group>"; };
-		78D7F903EC8248FD9F9C05BF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/SignUpView.swift; sourceTree = "<group>"; };
-		6CDD3EB1D27F464ABCF36B99 /* BookingConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/BookingConfirmationView.swift; sourceTree = "<group>"; };
-		A88BFA3E4A994ECDB8C73BF9 /* PassengerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/PassengerDetailsView.swift; sourceTree = "<group>"; };
-		0EDF233AD0364C949651E848 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/PaymentView.swift; sourceTree = "<group>"; };
-		BD62772D3BBA4B52B9AFCAB2 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/RouteDetailView.swift; sourceTree = "<group>"; };
-		7E4378C44BE14D9CA9E4A56E /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/RouteMapView.swift; sourceTree = "<group>"; };
-		5F517A5D67B846709663498F /* RouteSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/RouteSearchView.swift; sourceTree = "<group>"; };
-		5CAC79D9F4D644AC884283C8 /* SeatSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/SeatSelectionView.swift; sourceTree = "<group>"; };
-		4DD4992BA23C490DBE69309B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Chat/ChatView.swift; sourceTree = "<group>"; };
-		4CF565C939964DEDAE09D740 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/AnimatedButton.swift; sourceTree = "<group>"; };
-		9DDD6E00EB9F4488BCD51D04 /* BusStopLocationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/BusStopLocationCard.swift; sourceTree = "<group>"; };
-		1C05AB98C255497B9263F61B /* CityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/CityCard.swift; sourceTree = "<group>"; };
-		04902900DBF14B6B98D56209 /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/LottieAnimationView.swift; sourceTree = "<group>"; };
-		C8161E8B4B454DE4AC54DA59 /* QuickActionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/QuickActionCard.swift; sourceTree = "<group>"; };
-		32BBD3A3076042EB88424ADF /* RecentBookingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/RecentBookingCard.swift; sourceTree = "<group>"; };
-		07973DE10621403EB4B407F0 /* RouteAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/RouteAnnotation.swift; sourceTree = "<group>"; };
-		305579A242704656B44D5AEB /* SkeletonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/SkeletonLoader.swift; sourceTree = "<group>"; };
-		BA8DCD848054414DAA241BE5 /* StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/StatusBadge.swift; sourceTree = "<group>"; };
-		070B92C33B4C493B8D7F017C /* BookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Main/BookingsView.swift; sourceTree = "<group>"; };
-		0FE78525888C4327A8D53BE4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Main/HomeView.swift; sourceTree = "<group>"; };
-		CC141721F4674A61A69F756D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Main/MainTabView.swift; sourceTree = "<group>"; };
-		2067F9439EC94C6C9C06DAD3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Maps/MapView.swift; sourceTree = "<group>"; };
-		6D367229CCC74E359013CDBA /* RealTimeTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Maps/RealTimeTrackingView.swift; sourceTree = "<group>"; };
-		D3AAD47757474E00980EEB5D /* RwandanLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Maps/RwandanLocationsView.swift; sourceTree = "<group>"; };
-		395F55712C904F6ABC89F208 /* PaymentMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Profile/PaymentMethodsView.swift; sourceTree = "<group>"; };
-		B423399242BF46A9B94FB336 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Profile/ProfileView.swift; sourceTree = "<group>"; };
-		D03E319C1F8F42EB839705D3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Profile/SettingsView.swift; sourceTree = "<group>"; };
-		65750E5E7E9C40E687486CFF /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Tickets/TicketDetailView.swift; sourceTree = "<group>"; };
-		014A6BA0835B462C8EE33DE4 /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Tickets/TicketsView.swift; sourceTree = "<group>"; };
-		3DBB6F1B7AD1426285CEDDD4 /* TransLinka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransLinka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2E123623294D99B1C3EEE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ContentView.swift; sourceTree = "<group>"; };
+		C28633F70207401CB82F5C66 /* BusScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/BusScheduleView.swift; sourceTree = "<group>"; };
+		2D306E2CE76A414BAB5AB5CA /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/FavoritesView.swift; sourceTree = "<group>"; };
+		DCDCDB02C0B94A86ACF0E7B3 /* LuggageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/LuggageSelectionView.swift; sourceTree = "<group>"; };
+		D590073E698340B480E30E47 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/NotificationsManager.swift; sourceTree = "<group>"; };
+		2D0B23B4B611476FB397AAC3 /* RouteComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Features/RouteComparisonView.swift; sourceTree = "<group>"; };
+		53A95310B6A340F08AAC617F /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/Booking.swift; sourceTree = "<group>"; };
+		C8D64BA8308E4CD397422D38 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/Bus.swift; sourceTree = "<group>"; };
+		156267807484478BA96AFB4E /* LocationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/LocationModels.swift; sourceTree = "<group>"; };
+		CF1A3CD469A64F18BA4D7E52 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/PaymentMethod.swift; sourceTree = "<group>"; };
+		65D73A8E8CB544BB943CC975 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/Route.swift; sourceTree = "<group>"; };
+		4B13FB6B8DEF4219A8A8FFB3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Models/User.swift; sourceTree = "<group>"; };
+		DC1B3A11B2214D90ACEFC5D9 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/AuthenticationService.swift; sourceTree = "<group>"; };
+		02168DA693BA43CFAE70AA28 /* BlockchainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Blockchain/BlockchainManager.swift; sourceTree = "<group>"; };
+		8E25557DD5A74486883A6AF8 /* EthereumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Blockchain/EthereumService.swift; sourceTree = "<group>"; };
+		46D42A54C1014CB4958D2312 /* SolanaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Blockchain/SolanaService.swift; sourceTree = "<group>"; };
+		78E9A87C27D24F868588A639 /* BlockchainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/BlockchainService.swift; sourceTree = "<group>"; };
+		E8F17ADF2B6043F296B3FD36 /* BookingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/BookingService.swift; sourceTree = "<group>"; };
+		29498EE5DE4F48E4A12EB75E /* ChatbotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/ChatbotService.swift; sourceTree = "<group>"; };
+		C1E72575F5B940CEBCAA8072 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Location/LocationService.swift; sourceTree = "<group>"; };
+		0A4F2746427943DA8043B7C9 /* GoogleMapsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/Maps/GoogleMapsService.swift; sourceTree = "<group>"; };
+		B38A89BAC5CF4A2D8C692256 /* NFCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/NFCService.swift; sourceTree = "<group>"; };
+		C59E6856ED914EF9A331EC32 /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Services/QRCodeService.swift; sourceTree = "<group>"; };
+		F3925339BCDE4596A42B6AC1 /* TransLinkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/TransLinkaApp.swift; sourceTree = "<group>"; };
+		C54F0FE5EA1443ABA2B9E28D /* AdvancedAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/AdvancedAnimations.swift; sourceTree = "<group>"; };
+		0B354C1488BA4505A6476F52 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Animations.swift; sourceTree = "<group>"; };
+		3E0CEE4DBBD846FFAC8CF218 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Constants.swift; sourceTree = "<group>"; };
+		9A34E557B44D456AA2E6CE75 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		4C61B6B227094058924679B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Extensions.swift; sourceTree = "<group>"; };
+		FC88A5A42F2D4C1E8599A63D /* ReusableComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/ReusableComponents.swift; sourceTree = "<group>"; };
+		029E040CA46349FBBD7635CC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/Theme.swift; sourceTree = "<group>"; };
+		0882F4322AF940EFBFC7CF57 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Utilities/ViewModifiers.swift; sourceTree = "<group>"; };
+		F43352B6599744819261CA0E /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ViewModels/AdminViewModel.swift; sourceTree = "<group>"; };
+		E4A8275AC8EC4234890F95A2 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ViewModels/AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		FA2DF5B7BCCA41F39D258788 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/ViewModels/BookingViewModel.swift; sourceTree = "<group>"; };
+		58A763C2E2D44224A03232D9 /* ARNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/AR/ARNavigationView.swift; sourceTree = "<group>"; };
+		6CB51F3F266D400CA490D053 /* AdminBookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminBookingsView.swift; sourceTree = "<group>"; };
+		F4B91D599FC14AB9BCBDB78B /* AdminBusesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminBusesView.swift; sourceTree = "<group>"; };
+		4600D25E350041DEBD5916E6 /* AdminDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminDashboardView.swift; sourceTree = "<group>"; };
+		F07FABA3D27749EE9087DF81 /* AdminRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminRoutesView.swift; sourceTree = "<group>"; };
+		66639120C47543CFA89FA0ED /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Admin/AdminTabView.swift; sourceTree = "<group>"; };
+		020CF294585F4A1B97735E69 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/ForgotPasswordView.swift; sourceTree = "<group>"; };
+		FD0AC1D3C6ED4E69B2F17901 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/LandingView.swift; sourceTree = "<group>"; };
+		27F9013CD2734CAFB228D133 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/SignInView.swift; sourceTree = "<group>"; };
+		C5DA515129C743CAA0CB798F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Authentication/SignUpView.swift; sourceTree = "<group>"; };
+		519EDC46FABA4F4084345260 /* BookingConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/BookingConfirmationView.swift; sourceTree = "<group>"; };
+		94703702C11B43ED9EE17DEE /* PassengerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/PassengerDetailsView.swift; sourceTree = "<group>"; };
+		BAFF882988C74391873D9AA5 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/PaymentView.swift; sourceTree = "<group>"; };
+		5F8FFB4339214037BCADCF5F /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/RouteDetailView.swift; sourceTree = "<group>"; };
+		49B89C33E3A143CD80B4D8AC /* RouteMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/RouteMapView.swift; sourceTree = "<group>"; };
+		5FA54243F9D94933BC65CE7C /* RouteSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/RouteSearchView.swift; sourceTree = "<group>"; };
+		0BE51EEEB1EC4073AE1CBDEA /* SeatSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Booking/SeatSelectionView.swift; sourceTree = "<group>"; };
+		CFFD8500F23E4B8BA675F2D3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Chat/ChatView.swift; sourceTree = "<group>"; };
+		FDD63E66E83A49F5ADAB248A /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/AnimatedButton.swift; sourceTree = "<group>"; };
+		42155897438D4F8F98E31959 /* BusStopLocationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/BusStopLocationCard.swift; sourceTree = "<group>"; };
+		955A62F2B28F4A6CA0A4E4AF /* CityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/CityCard.swift; sourceTree = "<group>"; };
+		AD9DB5D8ADBF463C85D0FADB /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/LottieAnimationView.swift; sourceTree = "<group>"; };
+		C9EE214D84D34B3F92EDD4DF /* QuickActionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/QuickActionCard.swift; sourceTree = "<group>"; };
+		E1CCCE6FA0AF48E587B084EA /* RecentBookingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/RecentBookingCard.swift; sourceTree = "<group>"; };
+		F2DEDCC9F80B4586827E9185 /* RouteAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/RouteAnnotation.swift; sourceTree = "<group>"; };
+		D419162191C8437D82EBA34A /* SkeletonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/SkeletonLoader.swift; sourceTree = "<group>"; };
+		D81A8ACF3F3D4F46B52D48D0 /* StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Components/StatusBadge.swift; sourceTree = "<group>"; };
+		972137D233B94CB7AD37EF6D /* BookingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Main/BookingsView.swift; sourceTree = "<group>"; };
+		26DC7EFB204843A799D324E3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Main/HomeView.swift; sourceTree = "<group>"; };
+		6A69A38C68174C4A9E51F64C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Main/MainTabView.swift; sourceTree = "<group>"; };
+		E916F5B5444D4E62966892A2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Maps/MapView.swift; sourceTree = "<group>"; };
+		CB2193FBD643473C9396B878 /* RealTimeTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Maps/RealTimeTrackingView.swift; sourceTree = "<group>"; };
+		0A48A4F3B0EB4B61810A5363 /* RwandanLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Maps/RwandanLocationsView.swift; sourceTree = "<group>"; };
+		4C2FCEF1948F4154A9F8DC74 /* PaymentMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Profile/PaymentMethodsView.swift; sourceTree = "<group>"; };
+		07A450CAB99140CE88D8C3B5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Profile/ProfileView.swift; sourceTree = "<group>"; };
+		6FB542D12E864383B8BBDBB0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Profile/SettingsView.swift; sourceTree = "<group>"; };
+		EA6C2A48BE634D21B88E7EEB /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Tickets/TicketDetailView.swift; sourceTree = "<group>"; };
+		0C5C29C576C64A6B9A79F2EE /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLinka/Views/Tickets/TicketsView.swift; sourceTree = "<group>"; };
+		C8838CAF091D4D0195BB57C0 /* TransLinka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransLinka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A805FE103AA46EEAE4668A8 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+		4B488FB083774C7883056435 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
 			); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E4958B6D6EAE4F99AA03F168 = {isa = PBXGroup; children = (
-				6FC90EEC15A2447A8D70F1CB /* ContentView.swift */,
-				22B4349A6FFB4D2CA90DC9B6 /* BusScheduleView.swift */,
-				30F67CB28B664200A65E282C /* FavoritesView.swift */,
-				98872E3500DF42EAB1B677D1 /* LuggageSelectionView.swift */,
-				7EAC860D336A44488B7E4F46 /* NotificationsManager.swift */,
-				73C4263DF8D041DB8CA97AA7 /* RouteComparisonView.swift */,
-				3A2FC91C19A748BC8478F0E7 /* Booking.swift */,
-				B42A000687104834AEBCE2E7 /* Bus.swift */,
-				89C4136DD64648729F831BCE /* LocationModels.swift */,
-				1CFD13792CEF48E8B066B90F /* PaymentMethod.swift */,
-				1ABEBB50A9CB4784BE4966FC /* Route.swift */,
-				08D4898B2FA1459186EC6EAD /* User.swift */,
-				77E26E29FE734DA3A44CFAB7 /* AuthenticationService.swift */,
-				565BF2CF844544A0971707BE /* BlockchainManager.swift */,
-				BEBA7F033411435D875F107F /* EthereumService.swift */,
-				52C44F533E3F4A438456568D /* SolanaService.swift */,
-				7679CA4CD95245A0A74263D7 /* BlockchainService.swift */,
-				39F7D7E3B8B74B7591C1D0D0 /* BookingService.swift */,
-				0BFCC6D708A94B8885B73B08 /* ChatbotService.swift */,
-				CAB9901453CF4284A9A34C63 /* LocationService.swift */,
-				29030DAC4481408DADE26B6A /* GoogleMapsService.swift */,
-				9AB45B640FA542BDB6792D3B /* NFCService.swift */,
-				6FA21677CADC411AAC79CE20 /* QRCodeService.swift */,
-				978EA61DD220431DA38D56E3 /* TransLinkaApp.swift */,
-				359D909E58704EA2871380C2 /* AdvancedAnimations.swift */,
-				B1DF321C39E9466B8E691881 /* Animations.swift */,
-				F447C4747D98447B9079DE47 /* Constants.swift */,
-				2E01C17E48BD4F7285192702 /* CustomTextFieldStyle.swift */,
-				1B4F870A1F9F465988182FC3 /* Extensions.swift */,
-				D163E550E938436BA52F2D9B /* ReusableComponents.swift */,
-				18D0FFDA830B430EA66C200E /* Theme.swift */,
-				2DA5001D17DF44B79CA48E4C /* ViewModifiers.swift */,
-				C17EB04C624748349441A585 /* AdminViewModel.swift */,
-				941485FAF0394672879EF89B /* AuthenticationViewModel.swift */,
-				BE7D6C2EBA524D45B5F6F22B /* BookingViewModel.swift */,
-				F5E9B2B5394443C1806D3D8A /* ARNavigationView.swift */,
-				5128C969A3D24A9FB6AFE849 /* AdminBookingsView.swift */,
-				760E5645E28A4824BF591DC7 /* AdminBusesView.swift */,
-				113406FED3E74D899477B679 /* AdminDashboardView.swift */,
-				E72C0305A812488290E96C01 /* AdminRoutesView.swift */,
-				4805CD4CF67B4BD98A3C5003 /* AdminTabView.swift */,
-				83A44536563D440FB8B72DEE /* ForgotPasswordView.swift */,
-				9579E06082BA4DB1983CB129 /* LandingView.swift */,
-				511BF8A5AFE04861A957BE44 /* SignInView.swift */,
-				78D7F903EC8248FD9F9C05BF /* SignUpView.swift */,
-				6CDD3EB1D27F464ABCF36B99 /* BookingConfirmationView.swift */,
-				A88BFA3E4A994ECDB8C73BF9 /* PassengerDetailsView.swift */,
-				0EDF233AD0364C949651E848 /* PaymentView.swift */,
-				BD62772D3BBA4B52B9AFCAB2 /* RouteDetailView.swift */,
-				7E4378C44BE14D9CA9E4A56E /* RouteMapView.swift */,
-				5F517A5D67B846709663498F /* RouteSearchView.swift */,
-				5CAC79D9F4D644AC884283C8 /* SeatSelectionView.swift */,
-				4DD4992BA23C490DBE69309B /* ChatView.swift */,
-				4CF565C939964DEDAE09D740 /* AnimatedButton.swift */,
-				9DDD6E00EB9F4488BCD51D04 /* BusStopLocationCard.swift */,
-				1C05AB98C255497B9263F61B /* CityCard.swift */,
-				04902900DBF14B6B98D56209 /* LottieAnimationView.swift */,
-				C8161E8B4B454DE4AC54DA59 /* QuickActionCard.swift */,
-				32BBD3A3076042EB88424ADF /* RecentBookingCard.swift */,
-				07973DE10621403EB4B407F0 /* RouteAnnotation.swift */,
-				305579A242704656B44D5AEB /* SkeletonLoader.swift */,
-				BA8DCD848054414DAA241BE5 /* StatusBadge.swift */,
-				070B92C33B4C493B8D7F017C /* BookingsView.swift */,
-				0FE78525888C4327A8D53BE4 /* HomeView.swift */,
-				CC141721F4674A61A69F756D /* MainTabView.swift */,
-				2067F9439EC94C6C9C06DAD3 /* MapView.swift */,
-				6D367229CCC74E359013CDBA /* RealTimeTrackingView.swift */,
-				D3AAD47757474E00980EEB5D /* RwandanLocationsView.swift */,
-				395F55712C904F6ABC89F208 /* PaymentMethodsView.swift */,
-				B423399242BF46A9B94FB336 /* ProfileView.swift */,
-				D03E319C1F8F42EB839705D3 /* SettingsView.swift */,
-				65750E5E7E9C40E687486CFF /* TicketDetailView.swift */,
-				014A6BA0835B462C8EE33DE4 /* TicketsView.swift */,
-				BF445DF944AC4F99A57A679C /* Products */
+		E5C4F411B9DC4F329817CF2E = {isa = PBXGroup; children = (
+				9C2E123623294D99B1C3EEE2 /* ContentView.swift */,
+				C28633F70207401CB82F5C66 /* BusScheduleView.swift */,
+				2D306E2CE76A414BAB5AB5CA /* FavoritesView.swift */,
+				DCDCDB02C0B94A86ACF0E7B3 /* LuggageSelectionView.swift */,
+				D590073E698340B480E30E47 /* NotificationsManager.swift */,
+				2D0B23B4B611476FB397AAC3 /* RouteComparisonView.swift */,
+				53A95310B6A340F08AAC617F /* Booking.swift */,
+				C8D64BA8308E4CD397422D38 /* Bus.swift */,
+				156267807484478BA96AFB4E /* LocationModels.swift */,
+				CF1A3CD469A64F18BA4D7E52 /* PaymentMethod.swift */,
+				65D73A8E8CB544BB943CC975 /* Route.swift */,
+				4B13FB6B8DEF4219A8A8FFB3 /* User.swift */,
+				DC1B3A11B2214D90ACEFC5D9 /* AuthenticationService.swift */,
+				02168DA693BA43CFAE70AA28 /* BlockchainManager.swift */,
+				8E25557DD5A74486883A6AF8 /* EthereumService.swift */,
+				46D42A54C1014CB4958D2312 /* SolanaService.swift */,
+				78E9A87C27D24F868588A639 /* BlockchainService.swift */,
+				E8F17ADF2B6043F296B3FD36 /* BookingService.swift */,
+				29498EE5DE4F48E4A12EB75E /* ChatbotService.swift */,
+				C1E72575F5B940CEBCAA8072 /* LocationService.swift */,
+				0A4F2746427943DA8043B7C9 /* GoogleMapsService.swift */,
+				B38A89BAC5CF4A2D8C692256 /* NFCService.swift */,
+				C59E6856ED914EF9A331EC32 /* QRCodeService.swift */,
+				F3925339BCDE4596A42B6AC1 /* TransLinkaApp.swift */,
+				C54F0FE5EA1443ABA2B9E28D /* AdvancedAnimations.swift */,
+				0B354C1488BA4505A6476F52 /* Animations.swift */,
+				3E0CEE4DBBD846FFAC8CF218 /* Constants.swift */,
+				9A34E557B44D456AA2E6CE75 /* CustomTextFieldStyle.swift */,
+				4C61B6B227094058924679B1 /* Extensions.swift */,
+				FC88A5A42F2D4C1E8599A63D /* ReusableComponents.swift */,
+				029E040CA46349FBBD7635CC /* Theme.swift */,
+				0882F4322AF940EFBFC7CF57 /* ViewModifiers.swift */,
+				F43352B6599744819261CA0E /* AdminViewModel.swift */,
+				E4A8275AC8EC4234890F95A2 /* AuthenticationViewModel.swift */,
+				FA2DF5B7BCCA41F39D258788 /* BookingViewModel.swift */,
+				58A763C2E2D44224A03232D9 /* ARNavigationView.swift */,
+				6CB51F3F266D400CA490D053 /* AdminBookingsView.swift */,
+				F4B91D599FC14AB9BCBDB78B /* AdminBusesView.swift */,
+				4600D25E350041DEBD5916E6 /* AdminDashboardView.swift */,
+				F07FABA3D27749EE9087DF81 /* AdminRoutesView.swift */,
+				66639120C47543CFA89FA0ED /* AdminTabView.swift */,
+				020CF294585F4A1B97735E69 /* ForgotPasswordView.swift */,
+				FD0AC1D3C6ED4E69B2F17901 /* LandingView.swift */,
+				27F9013CD2734CAFB228D133 /* SignInView.swift */,
+				C5DA515129C743CAA0CB798F /* SignUpView.swift */,
+				519EDC46FABA4F4084345260 /* BookingConfirmationView.swift */,
+				94703702C11B43ED9EE17DEE /* PassengerDetailsView.swift */,
+				BAFF882988C74391873D9AA5 /* PaymentView.swift */,
+				5F8FFB4339214037BCADCF5F /* RouteDetailView.swift */,
+				49B89C33E3A143CD80B4D8AC /* RouteMapView.swift */,
+				5FA54243F9D94933BC65CE7C /* RouteSearchView.swift */,
+				0BE51EEEB1EC4073AE1CBDEA /* SeatSelectionView.swift */,
+				CFFD8500F23E4B8BA675F2D3 /* ChatView.swift */,
+				FDD63E66E83A49F5ADAB248A /* AnimatedButton.swift */,
+				42155897438D4F8F98E31959 /* BusStopLocationCard.swift */,
+				955A62F2B28F4A6CA0A4E4AF /* CityCard.swift */,
+				AD9DB5D8ADBF463C85D0FADB /* LottieAnimationView.swift */,
+				C9EE214D84D34B3F92EDD4DF /* QuickActionCard.swift */,
+				E1CCCE6FA0AF48E587B084EA /* RecentBookingCard.swift */,
+				F2DEDCC9F80B4586827E9185 /* RouteAnnotation.swift */,
+				D419162191C8437D82EBA34A /* SkeletonLoader.swift */,
+				D81A8ACF3F3D4F46B52D48D0 /* StatusBadge.swift */,
+				972137D233B94CB7AD37EF6D /* BookingsView.swift */,
+				26DC7EFB204843A799D324E3 /* HomeView.swift */,
+				6A69A38C68174C4A9E51F64C /* MainTabView.swift */,
+				E916F5B5444D4E62966892A2 /* MapView.swift */,
+				CB2193FBD643473C9396B878 /* RealTimeTrackingView.swift */,
+				0A48A4F3B0EB4B61810A5363 /* RwandanLocationsView.swift */,
+				4C2FCEF1948F4154A9F8DC74 /* PaymentMethodsView.swift */,
+				07A450CAB99140CE88D8C3B5 /* ProfileView.swift */,
+				6FB542D12E864383B8BBDBB0 /* SettingsView.swift */,
+				EA6C2A48BE634D21B88E7EEB /* TicketDetailView.swift */,
+				0C5C29C576C64A6B9A79F2EE /* TicketsView.swift */,
+				1FCAFDA7AB5B445EB904ACF6 /* Products */
 			); name = TransLinka; path = .; sourceTree = "<group>"; };
-		BF445DF944AC4F99A57A679C /* Products */ = {isa = PBXGroup; children = (
-				3DBB6F1B7AD1426285CEDDD4 /* TransLinka.app */
+		1FCAFDA7AB5B445EB904ACF6 /* Products */ = {isa = PBXGroup; children = (
+				C8838CAF091D4D0195BB57C0 /* TransLinka.app */
 			); name = Products; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0003484697E4E31900CE5F5 /* TransLinka */ = {isa = PBXNativeTarget; buildConfigurationList = 8D430066CA77492C8CBD7A58 /* Build configuration list for PBXNativeTarget "TransLinka" */; buildPhases = (
-			65E7D91C443F4FA3B76A9073 /* Sources */,
-			2A805FE103AA46EEAE4668A8 /* Frameworks */,
-			C58F6BD481934D7CBE04420A /* Resources */,
+		5FEA19ABE2854C9BB0F4B314 /* TransLinka */ = {isa = PBXNativeTarget; buildConfigurationList = F6E629C1098D433FA71669A6 /* Build configuration list for PBXNativeTarget "TransLinka" */; buildPhases = (
+			77ED9FA1D53249CEA6E0CD43 /* Sources */,
+			4B488FB083774C7883056435 /* Frameworks */,
+			41C70E32E15846FCA8E4A465 /* Resources */,
 		); buildRules = (
 		); dependencies = (
-		); name = TransLinka; productName = TransLinka; productReference = 3DBB6F1B7AD1426285CEDDD4 /* TransLinka.app */; productType = "com.apple.product-type.application"; };
+		); name = TransLinka; productName = TransLinka; productReference = C8838CAF091D4D0195BB57C0 /* TransLinka.app */; productType = "com.apple.product-type.application"; };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FE3834B4C3F4EB1BC2EB441 /* Project object */ = {isa = PBXProject; attributes = {LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; ORGANIZATIONNAME = TransLinka; }; buildConfigurationList = 4607C55ED9434B8083D833B6 /* Build configuration list for PBXProject "TransLinka" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 1; knownRegions = (en, Base,); mainGroup = E4958B6D6EAE4F99AA03F168; productRefGroup = BF445DF944AC4F99A57A679C /* Products */; projectDirPath = ""; projectRoot = ""; targets = (B0003484697E4E31900CE5F5 /* TransLinka */); };
+		E222D24A3A514E9083A011FC /* Project object */ = {isa = PBXProject; attributes = {LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; ORGANIZATIONNAME = TransLinka; }; buildConfigurationList = AA1376FFFF1C41A6A89BCE3E /* Build configuration list for PBXProject "TransLinka" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 1; knownRegions = (en, Base,); mainGroup = E5C4F411B9DC4F329817CF2E; productRefGroup = 1FCAFDA7AB5B445EB904ACF6 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (5FEA19ABE2854C9BB0F4B314 /* TransLinka */); };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C58F6BD481934D7CBE04420A /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+		41C70E32E15846FCA8E4A465 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
 			); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65E7D91C443F4FA3B76A9073 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
-				F09CEC1A5BB44112A52E404D /* ContentView.swift in Sources */
-				2B94C97686D74F8EB03AAD1B /* BusScheduleView.swift in Sources */
-				B1F8FD6CB6B743CB9D3DDC02 /* FavoritesView.swift in Sources */
-				5260ACF837D14539B56B5E0F /* LuggageSelectionView.swift in Sources */
-				BE7787D8BC0A47839A4088B3 /* NotificationsManager.swift in Sources */
-				4396063605F0487DBFA95237 /* RouteComparisonView.swift in Sources */
-				4387FD5FD8C942CD8E49E045 /* Booking.swift in Sources */
-				5E8A9AD5AA264030AEE2AF1A /* Bus.swift in Sources */
-				3683861E6DA94829AC738933 /* LocationModels.swift in Sources */
-				7F5CE64881394BF4A0A73AB6 /* PaymentMethod.swift in Sources */
-				36A832B6824A4859A7F69B35 /* Route.swift in Sources */
-				4C350FF9A072453AA4F71992 /* User.swift in Sources */
-				CBFBCDA7051D475281C38B08 /* AuthenticationService.swift in Sources */
-				914955C65A654773B444E543 /* BlockchainManager.swift in Sources */
-				3C9435E3AF844A54816D22FD /* EthereumService.swift in Sources */
-				EC0C2503A3614D608526BFD1 /* SolanaService.swift in Sources */
-				19D1580690A341CA9659A55D /* BlockchainService.swift in Sources */
-				21EFC954278741639F579AE7 /* BookingService.swift in Sources */
-				8F68B374BCDA4E47AC6D303D /* ChatbotService.swift in Sources */
-				E960A1F39DC542E9BDDEEC80 /* LocationService.swift in Sources */
-				79768117AEDE46B1BC4CF9FE /* GoogleMapsService.swift in Sources */
-				B1CF3D6634A14C8697B883B0 /* NFCService.swift in Sources */
-				413F37BC6BA0400DACF19FD7 /* QRCodeService.swift in Sources */
-				B8BAA9A513734B7E852846EB /* TransLinkaApp.swift in Sources */
-				E82741DCDBCD410892A2F66F /* AdvancedAnimations.swift in Sources */
-				E577FBDC7A484659A7276B40 /* Animations.swift in Sources */
-				CD83A00400134F3AA7FDDEC5 /* Constants.swift in Sources */
-				F81B39C9190D46369CC512D6 /* CustomTextFieldStyle.swift in Sources */
-				5C6BF21B1D1D47D381844C30 /* Extensions.swift in Sources */
-				30DAABF3A4FC4694AFE1BD34 /* ReusableComponents.swift in Sources */
-				181B0881AE2B410BA87CA208 /* Theme.swift in Sources */
-				B077A9EA23744D72A5375271 /* ViewModifiers.swift in Sources */
-				EBC484441E354715B02AC6F3 /* AdminViewModel.swift in Sources */
-				E53D9FF2AE614F748AFC70E5 /* AuthenticationViewModel.swift in Sources */
-				461263EBC3974F9EA15D5328 /* BookingViewModel.swift in Sources */
-				70E04761C5AF4EF5B0EF412A /* ARNavigationView.swift in Sources */
-				53DC0366D5CB4D26943AD64E /* AdminBookingsView.swift in Sources */
-				558896C778AF42B496CF4051 /* AdminBusesView.swift in Sources */
-				6D70A796C8704505863DA406 /* AdminDashboardView.swift in Sources */
-				1BAC5D00D3D6479994214F23 /* AdminRoutesView.swift in Sources */
-				C1CD2126F31843E0A73C88DD /* AdminTabView.swift in Sources */
-				61B00DEBEF144BF7A9E320FB /* ForgotPasswordView.swift in Sources */
-				EDA39CD36F594A9DA599E9CF /* LandingView.swift in Sources */
-				46D377CED1234D7FA18F73E5 /* SignInView.swift in Sources */
-				513BF9DD7F48460AA05897F0 /* SignUpView.swift in Sources */
-				C458D51DCF514C7AA39BD602 /* BookingConfirmationView.swift in Sources */
-				F1A007AC7D184AEC899681E6 /* PassengerDetailsView.swift in Sources */
-				5FC79221AB6F4A5CBF8CCA5F /* PaymentView.swift in Sources */
-				C41DEFED45CD478F87D26EBC /* RouteDetailView.swift in Sources */
-				D916490B34E447F1B1F5AD5E /* RouteMapView.swift in Sources */
-				BA2F60EDF67A4F5093122353 /* RouteSearchView.swift in Sources */
-				2CB7D7A12CC64E26823BA65A /* SeatSelectionView.swift in Sources */
-				D0BAC5247B1A4C1985817315 /* ChatView.swift in Sources */
-				7D559E5514D045BDAF9EAF56 /* AnimatedButton.swift in Sources */
-				B4F219CE93524D7A879F05ED /* BusStopLocationCard.swift in Sources */
-				48A5EEEFE89F4516A1092896 /* CityCard.swift in Sources */
-				FC815BA1A4284B6986BF2859 /* LottieAnimationView.swift in Sources */
-				D222D41D4FD14288B1D6C872 /* QuickActionCard.swift in Sources */
-				7EFDC3CB1EB54614875BD26A /* RecentBookingCard.swift in Sources */
-				001B778743074562B0C6DCE1 /* RouteAnnotation.swift in Sources */
-				E874D6F57B914B67AE82BDBB /* SkeletonLoader.swift in Sources */
-				E4F18748FE1F440EA8DB83C3 /* StatusBadge.swift in Sources */
-				7181229E27F044FDB939E983 /* BookingsView.swift in Sources */
-				B0BD814CBE9142CFAFE70628 /* HomeView.swift in Sources */
-				3181B09AFD9945529D659C73 /* MainTabView.swift in Sources */
-				BA0C361F4FF74E87855EDFDC /* MapView.swift in Sources */
-				FD586B039F044B70A2F88040 /* RealTimeTrackingView.swift in Sources */
-				980AE9ADBB5242C7ADFEF76A /* RwandanLocationsView.swift in Sources */
-				BE83C4B6C9414B9A97FBB5AB /* PaymentMethodsView.swift in Sources */
-				575732FD6C554D5D89D5AFA1 /* ProfileView.swift in Sources */
-				AE848F14AB774934B31E6ECE /* SettingsView.swift in Sources */
-				368022AF55B94E40843490E4 /* TicketDetailView.swift in Sources */
-				1A7AEDF1D0424ECCAFB99839 /* TicketsView.swift in Sources */
+		77ED9FA1D53249CEA6E0CD43 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				13FD708CDBCE41A7A631C572 /* ContentView.swift in Sources */
+				33A5A7F1A2844980BF00A157 /* BusScheduleView.swift in Sources */
+				B70F985B411C48A19768338A /* FavoritesView.swift in Sources */
+				E45B95E025B34A22921DD9D1 /* LuggageSelectionView.swift in Sources */
+				CD001B2990B443358262E360 /* NotificationsManager.swift in Sources */
+				C60FA8D8E2B24AAFB7F85B5C /* RouteComparisonView.swift in Sources */
+				C0309C8FEF9D42DFBBCBF5D7 /* Booking.swift in Sources */
+				F408617DBAA245C09A84A0AE /* Bus.swift in Sources */
+				B3C0794A1171487B9C397D2E /* LocationModels.swift in Sources */
+				A69A0D2D40144282A173E0E4 /* PaymentMethod.swift in Sources */
+				62A610A7CE7C4D02B1790B41 /* Route.swift in Sources */
+				DF1309CB952D49429821E4CE /* User.swift in Sources */
+				5E864C9D6FFC4B1D96BA6415 /* AuthenticationService.swift in Sources */
+				3EB32139EF874CF988CD47D9 /* BlockchainManager.swift in Sources */
+				6D755A06782D4F5F958936B3 /* EthereumService.swift in Sources */
+				1B8110800A3042D5A5BC6328 /* SolanaService.swift in Sources */
+				DA166FA5F30E4DAB839A6EE1 /* BlockchainService.swift in Sources */
+				DD775CFA29A04CC1AC691193 /* BookingService.swift in Sources */
+				9B1D9B2EECC448348467F6EC /* ChatbotService.swift in Sources */
+				E347C5851BF54EEB8B24ECB4 /* LocationService.swift in Sources */
+				D3357D173DF548549E7BE92B /* GoogleMapsService.swift in Sources */
+				3F488CC756D54323B71AA454 /* NFCService.swift in Sources */
+				2F9EF96F9D5F4550B090AC26 /* QRCodeService.swift in Sources */
+				1C93F50C7C1841E09C167A05 /* TransLinkaApp.swift in Sources */
+				51FD0952562C4DAD96D61A73 /* AdvancedAnimations.swift in Sources */
+				71C678C711E64EC19B6E0702 /* Animations.swift in Sources */
+				1037186B7C3A448D850B65A1 /* Constants.swift in Sources */
+				9961C0E7692A4D728AF3B7D1 /* CustomTextFieldStyle.swift in Sources */
+				4E69B99BA04B4974A2FFC810 /* Extensions.swift in Sources */
+				B7520819EB14477B83594BE2 /* ReusableComponents.swift in Sources */
+				17B04AF27562456CAB829FF4 /* Theme.swift in Sources */
+				5FA2E588D04C4B92B8606E25 /* ViewModifiers.swift in Sources */
+				0FABE37CFD364D2C8E840E01 /* AdminViewModel.swift in Sources */
+				6B97A1CC5CCD4B26BA398452 /* AuthenticationViewModel.swift in Sources */
+				239B51544F184F2ABE91AD1B /* BookingViewModel.swift in Sources */
+				4A61613378F745078231E121 /* ARNavigationView.swift in Sources */
+				86E7855E5B4D4DF3B6F3EB5F /* AdminBookingsView.swift in Sources */
+				F1733DEE3D144C04B31DD0DA /* AdminBusesView.swift in Sources */
+				170D417F48414F019B149E6B /* AdminDashboardView.swift in Sources */
+				A479F2D8A31446B69B22DB4B /* AdminRoutesView.swift in Sources */
+				2FE5F7EDC3FF4A3588003258 /* AdminTabView.swift in Sources */
+				3070C00B837246AF881D7A3C /* ForgotPasswordView.swift in Sources */
+				4CE17CAD63354FA7A9500AAE /* LandingView.swift in Sources */
+				11D1B8ADA47740349EB50534 /* SignInView.swift in Sources */
+				7DCCFB41AC5D492EB8977AB9 /* SignUpView.swift in Sources */
+				9EEB79D171754DACAEA88D81 /* BookingConfirmationView.swift in Sources */
+				50FA829CB04643299DD94297 /* PassengerDetailsView.swift in Sources */
+				2030534B81164962B9175690 /* PaymentView.swift in Sources */
+				EC6B0766A6674FA191DFCCC5 /* RouteDetailView.swift in Sources */
+				3857163F7BE34BBFA3866749 /* RouteMapView.swift in Sources */
+				D6ED7F1E07D94651AC8F9F41 /* RouteSearchView.swift in Sources */
+				3F437BA2483E43C482E41009 /* SeatSelectionView.swift in Sources */
+				359E7E0B8EEA4BCBAC9A641A /* ChatView.swift in Sources */
+				38ECBED491A54103B4D55236 /* AnimatedButton.swift in Sources */
+				5589DEF5B8BE413CA887F7BB /* BusStopLocationCard.swift in Sources */
+				28922FFFE466443BBF1CA497 /* CityCard.swift in Sources */
+				9339F45164684735AC69C532 /* LottieAnimationView.swift in Sources */
+				BE6D6A5612844FFA97CCD87A /* QuickActionCard.swift in Sources */
+				3742E71479F742AF8EF3B559 /* RecentBookingCard.swift in Sources */
+				6476619037114AF0A38F1AA5 /* RouteAnnotation.swift in Sources */
+				2BAA3DE884A84D98A51D6846 /* SkeletonLoader.swift in Sources */
+				DB562DC86F294E299B78CF74 /* StatusBadge.swift in Sources */
+				3A42F6BC8E16401FA0EB59F0 /* BookingsView.swift in Sources */
+				3CF5910EEA8541E0A0C1B2F9 /* HomeView.swift in Sources */
+				BC3CC283117E4A448A85DF0A /* MainTabView.swift in Sources */
+				8781E93E08344864B0D0AFAD /* MapView.swift in Sources */
+				293D3B5C4C64440ABE3B42B4 /* RealTimeTrackingView.swift in Sources */
+				67364F8E34754A37A6FF8F1E /* RwandanLocationsView.swift in Sources */
+				F11B4514210A4AB4A2F8315F /* PaymentMethodsView.swift in Sources */
+				637CD93F28244012834874B2 /* ProfileView.swift in Sources */
+				8B271EE3738B406FB4EA5A6E /* SettingsView.swift in Sources */
+				8EFF078C70714A08AC7088D0 /* TicketDetailView.swift in Sources */
+				BB9AB2112B9F4F2D9829CC7C /* TicketsView.swift in Sources */
 			); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F81B14EC3F4440FC831A5856 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
-		8AED991C5CE5469DA5346328 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
-		0868D81360FD4A8798491A73 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; INFOPLIST_FILE = TransLinka/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.translinka.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
-		7584FFD4CC2C4FF6A57DC31B /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; INFOPLIST_FILE = TransLinka/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.translinka.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		D8EC7973D0C545CE908A55BF /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
+		652BEF80F57B47D6833D7D93 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
+		0646C2BCA9E644149BC5BB97 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; INFOPLIST_FILE = TransLinka/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.translinka.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		9747156DF05243E99FF48144 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; INFOPLIST_FILE = TransLinka/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.translinka.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4607C55ED9434B8083D833B6 /* Build configuration list for PBXProject "TransLinka" */ = {isa = XCConfigurationList; buildConfigurations = (
-			F81B14EC3F4440FC831A5856 /* Debug */,
-			8AED991C5CE5469DA5346328 /* Release */,
+		AA1376FFFF1C41A6A89BCE3E /* Build configuration list for PBXProject "TransLinka" */ = {isa = XCConfigurationList; buildConfigurations = (
+			D8EC7973D0C545CE908A55BF /* Debug */,
+			652BEF80F57B47D6833D7D93 /* Release */,
 		); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-		8D430066CA77492C8CBD7A58 /* Build configuration list for PBXNativeTarget "TransLinka" */ = {isa = XCConfigurationList; buildConfigurations = (
-			0868D81360FD4A8798491A73 /* Debug */,
-			7584FFD4CC2C4FF6A57DC31B /* Release */,
+		F6E629C1098D433FA71669A6 /* Build configuration list for PBXNativeTarget "TransLinka" */ = {isa = XCConfigurationList; buildConfigurations = (
+			0646C2BCA9E644149BC5BB97 /* Debug */,
+			9747156DF05243E99FF48144 /* Release */,
 		); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 /* End XCConfigurationList section */
 
 };
-	rootObject = 1FE3834B4C3F4EB1BC2EB441 /* Project object */;
+	rootObject = E222D24A3A514E9083A011FC /* Project object */;
 }

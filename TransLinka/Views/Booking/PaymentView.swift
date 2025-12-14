@@ -24,6 +24,10 @@ struct PaymentView: View {
     @State private var showBookingConfirmation = false
     @State private var confirmedBooking: Booking?
     
+    var totalPriceString: String {
+        String(format: "$%.2f", totalPrice)
+    }
+    
     var totalPrice: Double {
         route.price * Double(bookingViewModel.selectedSeats.count)
     }

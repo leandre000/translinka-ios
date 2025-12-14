@@ -19,7 +19,7 @@ struct AdminDashboardView: View {
                         StatCard(title: "Total Bookings", value: "\(adminViewModel.totalBookings)", icon: "calendar", color: Theme.primaryBlue)
                         StatCard(title: "Total Users", value: "\(adminViewModel.totalUsers)", icon: "person.2.fill", color: Theme.accentGreen)
                         StatCard(title: "Total Routes", value: "\(adminViewModel.totalRoutes)", icon: "map.fill", color: Theme.accentOrange)
-                        StatCard(title: "Total Revenue", value: "$\(adminViewModel.totalRevenue, specifier: "%.2f")", icon: "dollarsign.circle.fill", color: Theme.accentGreen)
+                        StatCard(title: "Total Revenue", value: String(format: "$%.2f", adminViewModel.totalRevenue), icon: "dollarsign.circle.fill", color: Theme.accentGreen)
                     }
                     .padding(.horizontal, Theme.spacingLarge)
                     .padding(.top, Theme.spacingMedium)

@@ -66,8 +66,8 @@ struct BookingConfirmationView: View {
                     VStack(spacing: Theme.spacingMedium) {
                         if let route = booking.route {
                             BookingDetailRow(label: "Route", value: "\(route.origin) → \(route.destination)")
-                            BookingDetailRow(label: "Date", value: route.departureTime, style: .date)
-                            BookingDetailRow(label: "Time", value: route.departureTime, style: .time)
+                            BookingDetailRow(label: "Date", value: route.departureTime, style: .dateTime.day().month().year())
+                            BookingDetailRow(label: "Time", value: route.departureTime, style: .dateTime.hour().minute())
                             BookingDetailRow(label: "Seats", value: booking.seatsString)
                             BookingDetailRow(label: "Passenger", value: booking.passengerName)
                         }
@@ -148,7 +148,7 @@ struct BookingDetailRow: View {
             Spacer()
             
             if let date = value as? Date, let style = style {
-                Text(date, style: style)
+                Text(date.formatted(style))
                     .font(.subheadline)
                     .fontWeight(.medium)
             } else {

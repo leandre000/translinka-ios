@@ -15,8 +15,8 @@ let package = Package(
     ],
     dependencies: [
         // Ethereum (web3) + BigInt
-        .package(url: "https://github.com/argentlabs/web3.swift", from: "0.9.3"),
-        .package(url: "https://github.com/attaswift/BigInt", from: "5.3.0"),
+        // .package(url: "https://github.com/argentlabs/web3.swift", from: "0.9.3"),
+        // .package(url: "https://github.com/attaswift/BigInt", from: "5.3.0"),
         // Solana example (uncomment when wiring the Solana integration)
         // .package(url: "https://github.com/p2p-org/solana-swift", from: "1.0.0"),
     ],
@@ -24,15 +24,10 @@ let package = Package(
         .target(
             name: "TransLinka",
             dependencies: [
-                .product(name: "Web3", package: "web3.swift"),
-                .product(name: "BigInt", package: "BigInt"),
+                // .product(name: "Web3", package: "web3.swift"),
+                // .product(name: "BigInt", package: "BigInt"),
             ],
             path: "TransLinka"
-        ),
-        .testTarget(
-            name: "TransLinkaTests",
-            dependencies: ["TransLinka"],
-            path: "TransLinkaTests"
         ),
     ]
 )

@@ -77,7 +77,14 @@ struct ScheduleRow: View {
                 }
                 .foregroundColor(schedule.availableSeats > 10 ? Theme.accentGreen : Theme.accentOrange)
                 
-                StatusBadge(status: schedule.status)
+                Text(schedule.status.displayName)
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(Theme.accentGreen.opacity(0.2))
+                    .foregroundColor(Theme.accentGreen)
+                    .cornerRadius(8)
             }
         }
         .padding()
@@ -97,6 +104,15 @@ struct BusSchedule: Identifiable {
         case limited
         case soldOut
         case cancelled
+        
+        var displayName: String {
+            switch self {
+            case .available: return "Available"
+            case .limited: return "Limited"
+            case .soldOut: return "Sold Out"
+            case .cancelled: return "Cancelled"
+            }
+        }
     }
 }
 

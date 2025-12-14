@@ -77,7 +77,7 @@ struct ARNavigationView: View {
                     .background(Color.black.opacity(0.6))
                     .cornerRadius(Theme.cornerRadiusMedium)
                     .padding()
-                    .slideIn(from: .bottom)
+                    .slideIn(from: .up)
                 }
                 
                 // AR Controls

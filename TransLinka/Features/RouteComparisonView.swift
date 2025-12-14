@@ -81,7 +81,7 @@ struct ComparisonRouteCard: View {
                     ComparisonMetric(
                         icon: "dollarsign.circle.fill",
                         label: "Price",
-                        value: "$\(route.price, specifier: "%.2f")"
+                        value: String(format: "$%.2f", route.price)
                     )
                     
                     ComparisonMetric(

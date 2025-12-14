@@ -32,7 +32,7 @@ class NFCService: NSObject, ObservableObject {
     }
     
     func stopReading() {
-        session?.invalidateSession()
+        session?.invalidate()
         isReading = false
     }
     

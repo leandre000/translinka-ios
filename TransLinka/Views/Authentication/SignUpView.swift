@@ -180,15 +180,6 @@ struct SignUpView: View {
     }
 }
 
-struct CustomTextFieldStyle: TextFieldStyle {
-    func _body(configuration: TextField<Self._Label>) -> some View {
-        configuration
-            .padding()
-            .background(Color.gray.opacity(0.1))
-            .cornerRadius(Theme.cornerRadiusMedium)
-    }
-}
-
 #Preview {
     SignUpView()
         .environmentObject(AuthenticationViewModel())

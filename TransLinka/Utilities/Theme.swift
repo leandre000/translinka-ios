@@ -49,12 +49,6 @@ struct Shadow {
 }
 
 extension View {
-    func cardStyle() -> some View {
-        self
-            .background(Theme.cardBackground)
-            .cornerRadius(Theme.cornerRadiusMedium)
-            .shadow(color: Theme.shadowSmall.color, radius: Theme.shadowSmall.radius, x: Theme.shadowSmall.x, y: Theme.shadowSmall.y)
-    }
     
     func primaryButtonStyle() -> some View {
         self

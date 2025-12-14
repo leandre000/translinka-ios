@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Booking: Identifiable, Codable {
     let id: String

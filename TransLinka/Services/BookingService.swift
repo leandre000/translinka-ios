@@ -61,7 +61,7 @@ class BookingService {
         try await Task.sleep(nanoseconds: 2_000_000_000)
         
         guard let route = getRoute(by: routeId) else {
-            throw BookingError.routeNotFound(ErrorMessages.routeNotFound)
+            throw BookingError.routeNotFound
         }
         
         // Generate blockchain hash for ticket security

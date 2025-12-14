@@ -8,10 +8,11 @@
 
 import Foundation
 import CoreLocation
+import Combine
 
 /// Google Maps service for directions, places, and street view
 /// TODO: Add Google Maps API key and enable in production
-class GoogleMapsService {
+class GoogleMapsService: ObservableObject {
     static let shared = GoogleMapsService()
     
     // MARK: - Commented out for now - requires API key
@@ -88,7 +89,8 @@ class GoogleMapsService {
             name: "",
             address: "",
             rating: 0.0,
-            photos: []
+            photos: [],
+            location: CLLocationCoordinate2D(latitude: 0, longitude: 0)
         )
     }
     
@@ -139,11 +141,13 @@ struct Place {
     let coordinate: CLLocationCoordinate2D
 }
 
-struct PlaceDetails {
+struct PlaceDetails: Identifiable {
+    let id = UUID()
     let name: String
     let address: String
     let rating: Double
     let photos: [String]
+    let location: CLLocationCoordinate2D
 }
 
 // MARK: - Error Types

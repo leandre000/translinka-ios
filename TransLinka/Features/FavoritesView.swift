@@ -30,11 +30,12 @@ struct FavoritesView: View {
                     ForEach(favoritesViewModel.favoriteRoutes) { route in
                         FavoriteRouteRow(route: route)
                             .swipeActions(edge: .trailing) {
-                                Button(role: .destructive) {
+                                Button(action: {
                                     favoritesViewModel.removeFavorite(route)
-                                } {
+                                }) {
                                     Label("Remove", systemImage: "trash")
                                 }
+                                .tint(.red)
                             }
                     }
                 }

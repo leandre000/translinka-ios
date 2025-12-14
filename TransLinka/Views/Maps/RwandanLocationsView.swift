@@ -89,7 +89,7 @@ struct CityDetailView: View {
                         // City Images (Street View)
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: Theme.spacingMedium) {
-                                ForEach(details.photoURLs, id: \.self) { urlString in
+                                ForEach(details.photos, id: \.self) { urlString in
                                     AsyncImage(url: URL(string: urlString)) { image in
                                         image
                                             .resizable()
@@ -188,14 +188,13 @@ struct StreetViewImageView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: Theme.spacingMedium) {
-                    // Street View Image
-                    AsyncImage(url: URL(string: GoogleMapsService.shared.getStreetViewImage(location: location))) { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                    } placeholder: {
-                        ProgressView()
-                    }
+                    // Street View Image (stubbed - requires API key)
+                    Color.gray.opacity(0.3)
+                        .frame(height: 200)
+                        .overlay(
+                            Text("Street View\n(Requires API Key)")
+                                .foregroundColor(.gray)
+                        )
                     .cornerRadius(Theme.cornerRadiusMedium)
                     .padding()
                     
@@ -217,7 +216,4 @@ struct StreetViewImageView: View {
     }
 }
 
-extension City: Identifiable {
-    var id: String { name }
-}
 

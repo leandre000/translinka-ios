@@ -164,7 +164,7 @@ struct DetailRow: View {
             Spacer()
             
             if let date = value as? Date, let style = style {
-                Text(date, style: style)
+                Text(date.formatted(style))
                     .font(.subheadline)
                     .fontWeight(.medium)
             } else {

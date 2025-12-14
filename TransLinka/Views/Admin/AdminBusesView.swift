@@ -59,7 +59,14 @@ struct AdminBusRow: View {
             
             Spacer()
             
-            StatusBadge(status: bus.status.rawValue)
+            Text(bus.status.rawValue)
+                .font(.caption)
+                .fontWeight(.medium)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 4)
+                .background(Theme.accentGreen.opacity(0.2))
+                .foregroundColor(Theme.accentGreen)
+                .cornerRadius(8)
         }
         .padding(.vertical, Theme.spacingSmall)
     }

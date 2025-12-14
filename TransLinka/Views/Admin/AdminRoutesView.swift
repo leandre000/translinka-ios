@@ -127,7 +127,7 @@ struct DetailSection: View {
                 .foregroundColor(Theme.textSecondary)
             
             if let date = value as? Date, let style = style {
-                Text(date, style: style)
+                Text(date.formatted(style))
                     .font(.headline)
             } else {
                 Text("\(value)")

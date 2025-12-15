@@ -4,9 +4,14 @@
 //
 //  Created on 2024
 //
+//  NOTE:
+//  NFC functionality is currently disabled. This file provides a no-op
+//  implementation so the rest of the app can compile without requiring
+//  NFC capabilities or entitlements.
+//
 
 import Foundation
-import CoreNFC
+import Combine
 
 class NFCService: NSObject, ObservableObject {
     static let shared = NFCService()
@@ -14,54 +19,27 @@ class NFCService: NSObject, ObservableObject {
     @Published var isReading = false
     @Published var lastReadMessage: String?
     
-    private var session: NFCNDEFReaderSession?
-    
     private override init() {
         super.init()
     }
     
+    /// Start NFC reading – currently a no-op
     func startReading() {
-        guard NFCNDEFReaderSession.readingAvailable else {
-            print("NFC reading not available on this device")
-            return
-        }
-        
-        session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: false)
-        session?.begin()
-        isReading = true
-    }
-    
-    func stopReading() {
-        session?.invalidate()
+        // NFC feature is disabled for now
+        print("NFCService.startReading() called, but NFC is disabled.")
         isReading = false
     }
     
-    func writeTicket(_ ticketData: String) {
-        guard NFCNDEFReaderSession.readingAvailable else {
-            print("NFC writing not available on this device")
-            return
-        }
-        
-        // Implementation for writing NFC tags
-        // This would require NFCNDEFWriterSession
-    }
-}
-
-extension NFCService: NFCNDEFReaderSessionDelegate {
-    func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
-        DispatchQueue.main.async {
-            self.isReading = false
-        }
+    /// Stop NFC reading – currently a no-op
+    func stopReading() {
+        // NFC feature is disabled for now
+        isReading = false
     }
     
-    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        DispatchQueue.main.async {
-            if let message = messages.first,
-               let payload = message.records.first?.payload,
-               let string = String(data: payload, encoding: .utf8) {
-                self.lastReadMessage = string
-            }
-        }
+    /// Write a ticket to NFC – currently a no-op
+    func writeTicket(_ ticketData: String) {
+        // NFC feature is disabled for now
+        print("NFCService.writeTicket(_:) called, but NFC is disabled.")
     }
 }
 
